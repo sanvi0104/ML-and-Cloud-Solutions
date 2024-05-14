@@ -544,7 +544,7 @@ transform: skewY(10deg);
 
 .card:hover .subtext-wrapper {
   opacity: 1;
-  bottom: -20px;
+  bottom: -2rem; /*-20px*/
   position: absolute;
   width: 100%;
   transition: all 1s ease-in-out;
@@ -591,16 +591,19 @@ transform: skewY(10deg);
   }
 }
 
-#featureContainer .carousel-inner,
+/* #featureContainer .carousel-inner,
 #crossCarouselContainer .carousel-inner {
   padding: 1em;
-}
+} */
+
+#featureCarousel {padding: 0}
 
  #featureContainer .card,
  #crossCarouselContainer .carousel-item {
-  margin: 0 1em;
+  margin: 0 1em 0 0;
   background-color: #000;
 }
+#featureContainer .carousel-inner .carousel-item:first-child .card {margin: 0;}
 
 /* #featureContainer .card-img-overlays {
   color: #fff;
@@ -667,4 +670,31 @@ transform: skewY(10deg);
 #featureContainer .indicator.disabled {
   color: lightgray;
   background: #888888;
+}
+
+@media (max-width: 991.98px){
+  .navbar-nav > li > a,
+  .nav-link:hover, .footer-navbar > li > a:hover {
+    padding: 10px 0 !important;
+  }
+  .navbar-nav .nav-link.active,
+  .navbar-nav .nav-link:hover {
+    background-position: 0 30px;
+  }
+  #featureContainer .carousel-item,
+  #crossCarouselContainer .carousel-item {
+    flex: 0 0 calc(100%);
+  }
+
+  #featureContainer .carousel.pointer-event,
+  #featureContainer .carousel-inner,
+  #featureContainer .card {padding: 0; margin: 0;}
+
+  #featureContainer .card:hover .overlay {height: 8rem;}
+
+  #featureContainer .card:hover .card-text {bottom: 1rem !important;}
+
+  #featureContainer .card .card-text {font-size: 1rem;}
+
+  #featureContainer .card .subtext-wrapper {font-size: .8rem;}
 }
