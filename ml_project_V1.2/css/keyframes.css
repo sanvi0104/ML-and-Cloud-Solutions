@@ -1,0 +1,56 @@
+@keyframes wave {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+  }
+}
+
+@keyframes white-wave {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 100%;
+    color: white;
+  }
+}
+@keyframes red-wave {
+  100% {
+    color: #ed2b24;
+  }
+}
+@keyframes left-right-white-wave {
+  0% {
+    color: black;
+  }
+  100% {
+    color: white;
+  }
+}
+@keyframes slide-in {
+  to {
+    color: linear-gradient(to left, white, black);
+  }
+}
+
+@keyframes erase {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+@keyframes button-transform-reduce-emboss {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(10px, 10px);
+    box-shadow: 0 0 black;
+  }
+}
+
+

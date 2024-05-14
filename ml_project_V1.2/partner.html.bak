@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ML AND Cloud SOLUTIONS PVT LTD</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="./css/ml-style.css" rel="stylesheet" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/fontawesome/fontawesome.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="./js/jquery.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="./js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./js/project-carousel.js"></script>
+	<script type="text/javascript" src="./js/crossed-carousel.js"></script>
+  </head>
+  <body>
+    <div class="home-bg mouseBackground" id="mouseBackground">
+      <nav
+        class="navbar navbar-expand-lg sticky-top d-lg-flex p-3 bg-black align-items-center"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample11"
+            aria-controls="navbarsExample11"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse d-lg-flex" id="navbarsExample11">
+            <a class="navbar-brand col-lg-3 me-0 text-light" href="#"
+              >ML LOGO</a
+            >
+            <ul
+              class="navbar-nav col-lg-6 justify-content-lg-center d-inline-flex"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Partner</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Services</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="#">Cloud Solutions</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >Custom Software Development</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Mobile App Development
+                    </a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Outsourcing</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+            </ul>
+            <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+              <button class="btn text-light header-btn-contact-us">
+                Contact Us
+              </button>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div>
+        <div class="container">
+          <section class="py-5 text-center">
+            <div class="row">
+              <div class="col-md-12 mx-auto">
+                <h1 class="drive-your-business-text d-inline-block">
+                  Drive Your Business Forward with Tailored Software Solutions
+                </h1>
+                <h5 class="lead">
+                  Welcome to ML and Cloud Solutions PVT Ltd, where we transform
+                  your business needs into cutting-edge software realities. As a
+                  leader in customized software development and cloud services,
+                  we are dedicated to delivering innovative and scalable
+                  solutions that drive success.
+                </h5>
+                <p>
+                  <a href="#" class="btn btn-primary my-2 btn-lets-talk"
+                    >Lets Talk</a
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
+          <div class="middle-content">
+            <div class="services">
+              <h3>Services</h3>
+              <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                  <h1 class="drive-your-business-text">01</h1>
+                  <div class="card img-fluid">
+                    <img
+                      class="card-img-top homepage-card-img"
+                      src="./images/services/cloud_sol_services.jpg"
+                      alt="cloud_sol_services"
+                    />
+                    <div class="card-img-overlay services-card-img-overlay">
+                      <p class="card-text">Cloud Solution and Services</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4 service-card-padding">
+                  <h1 class="drive-your-business-text">02</h1>
+                  <div class="card img-fluid">
+                    <img
+                      class="card-img-top homepage-card-img"
+                      src="./images/services/cust_software_dev.jpg"
+                      alt="cust_software_dev"
+                      style="width: 100%"
+                    />
+                    <div class="card-img-overlay">
+                      <p class="card-text">Mobile App Developement</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                  <h1 class="drive-your-business-text">03</h1>
+                  <div class="card img-fluid">
+                    <img
+                      class="card-img-top homepage-card-img"
+                      src="./images/services/mobile_app_dev.jpg"
+                      alt="mobile_app_dev"
+                      style="width: 100%"
+                    />
+                    <div class="card-img-overlay">
+                      <p class="card-text">Custom Software Development</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4 service-card-padding">
+                  <h1 class="drive-your-business-text">04</h1>
+                  <div class="card img-fluid">
+                    <img
+                      class="card-img-top homepage-card-img"
+                      src="./images/services/outsourcing.jpg"
+                      alt="outsourcing"
+                      style="width: 100%"
+                    />
+                    <div class="card-img-overlay">
+                      <p class="card-text">Outsourcing</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix"></div>
+            <div class="h1 text-center pt-4 pb-4">
+              Latest <span class="text-red">Projects</span>
+            </div>
+
+			<!--Project Carousel START-->
+			<div class="container my-3 mt-5" id="featureContainer">
+  <div class="row mx-auto my-auto justify-content-center">
+    <div id="featureCarousel" class="carousel slide" data-bs-ride="carousel">
+      <!-- Add Slides To The Carousel -->
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-img">
+                <img src="images/project/project_01.jpg" class="img-fluid">
+              </div>
+              <div class="card-img-overlays">Project 1</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-img">
+               <img src="images/project/project_04.jpg" class="img-fluid">
+              </div>
+              <div class="card-img-overlays">Project 2</div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-img">
+                <img src="images/project/project_03.jpg" class="img-fluid">
+              </div>
+              <div class="card-img-overlays">Project 3</div>
+            </div>
+          </div>
+        </div>
+		 <div class="carousel-item">
+          <div class="col-md-6">
+            <div class="card">
+              <div class="card-img">
+                <img src="images/project/project_04.jpg" class="img-fluid">
+              </div>
+              <div class="card-img-overlays">Project 4</div>
+            </div>
+          </div>
+        </div>
+        ... more slides here
+      </div>
+	   <!-- Carousel Controls. OPTIONAL -->
+      <div class="d-inline-flex px-2 pt-2 pb-2 justify-content-between">
+			<a class="indicator" href="#featureCarousel" role="button" data-bs-slide="prev">
+				<span class="fas fa-chevron-left" aria-hidden="true"></span>
+			</a> &nbsp;&nbsp;
+			<a class="w-aut indicator" href="#featureCarousel" role="button" data-bs-slide="next">
+				<span class="fas fa-chevron-right" aria-hidden="true"></span>
+			</a>
+      </div>
+    </div>
+  </div>
+</div><!--Project Carousel END-->
+            <div class="partner-post pt-4">
+              <h5 class="partner-program-title">Partner Program</h5>
+              <div class="row">
+                <div class="col-sm-4">
+                  <h1 class="h1 text-uppercase">Join with Us</h1>
+                  <p class="join-with-us-paragraph">
+                    Join forces with us and become a part of the innovation
+                    journey. Our partnership program is designed to foster
+                    collaborative growth, mutual success, and technological
+                    advancement.
+                  </p>
+                  <p>
+                    <a href="#" class="btn btn-primary my-2 btn-contact-us">
+                      Join
+                      <i
+                        class="far fa-arrow-alt-circle-right fa-2x contact-us-arrow"
+                      >
+                      </i>
+                    </a>
+                  </p>
+                </div>
+                <div class="col-sm-8">
+                  <img
+                    src="./images/partner_program/partner.jpg"
+                    title="Partner Program"
+                    alt="Partner Program"
+                    class="float-end img-fluid"
+                  />
+                </div>
+              </div>
+            </div><!--End of partner-post-->
+			
+		<!--Crossed Carousel END-->
+		
+		<div class="container my-3 mt-5" id="cross-carousel">
+			<div class="row mx-auto my-auto justify-content-center">
+				<div class="carousel slide" data-bs-ride="carousel">
+					<!-- Add Slides To The Carousel -->
+				  <div class="carousel-inner" role="listbox">
+					<div class="carousel-item active">
+					  <div class="col-md-6">
+						 <img src="images/crossed_carousel/cross_01.jpg" class="img-fluid">
+					   </div>   
+					</div>
+					<div class="carousel-item">
+					 <div class="col-md-6">
+						 <img src="images/crossed_carousel/cross_02.jpg" class="img-fluid">
+					   </div>
+					  </div>
+					  <div class="carousel-item">
+					 <div class="col-md-6">
+						<img src="images/crossed_carousel/cross_03.jpg" class="img-fluid">
+					   </div>
+					  </div>
+					  <div class="carousel-item">
+					 <div class="col-md-6">
+						<img src="images/crossed_carousel/cross_04.jpg" class="img-fluid">
+					   </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+
+			<!--Crossed Carousel END-->
+            <div class="about_us pt-5 mt-5">
+              <h1 class="h1 text-uppercase">
+                <span class="text-red">ABOUT</span> US
+              </h1>
+              <p class="about-us-paragraph">
+                ML and Cloud Solutions PVT Ltd is a leading provider of
+                customized software development and solution services. With
+                years of industry experience and a team of highly skilled
+                professionals, we have earned a reputation for delivering
+                excellence and innovation. We pride ourselves on our ability to
+                transform complex business challenges into agile software
+                solutions that drive success. When you choose us, you can expect
+                top-notch service, unmatched expertise, and a commitment to your
+                business's growth
+              </p>
+              <div>
+                <img
+                  src="./images/about_us/about.jpg"
+                  title="About Us"
+                  alt="About Us"
+                  class="img-fluid mx-auto d-block"
+                />
+              </div>
+            </div>
+            <!--End of about_us-->
+
+            <div class="contact_us mt-5">
+              <div class="text-center">
+                <img
+                  src="./images/contact_us/contact.jpg"
+                  title="Contact Us"
+                  alt="Contact Us"
+                  class="img-fluid mx-auto d-block contact-us-img"
+                />
+                <h1 class="h1">Have any project idea?</h1>
+                <p>
+                  <a href="#" class="btn btn-primary my-2 btn-contact-us">
+                    Contact Us
+                    <i
+                      class="far fa-arrow-alt-circle-right fa-2x contact-us-arrow"
+                    >
+                    </i>
+                  </a>
+                </p>
+              </div>
+            </div>
+            <!--END of contact_us -->
+          </div>
+          <footer class="bd-footer py-5 mt-5">
+            <div class="padding-px-4-web py-5">
+              <div class="row">
+                <div class="col-md-3 mb-3">
+                  <a
+                    class="d-inline-flex align-items-center mb-2 link-dark text-decoration-none"
+                    href="/"
+                    aria-label="Bootstrap"
+                    >LOGO</a
+                  >
+                  <p class="white-to-red-on-hover-color">
+                    Connect with ML and Cloud Solutions PVT Ltd | Explore
+                    Opportunities | Privacy Policy Terms of Use | © 2024 ML and
+                    Cloud Solutions PVT Ltd. All rights reserved.
+                  </p>
+                </div>
+                <div class="col col-xs-3">
+                  <h5>Navigation</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2"><a href="/">Home</a></li>
+                    <li class="mb-2"><a href="/docs/5.0/">Partner</a></li>
+                    <li class="mb-2">
+                      <a href="/docs/5.0/examples/">Services</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="https://themes.getbootstrap.com/">About Us</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="https://blog.getbootstrap.com/">Contact Us</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col col-xs-3">
+                  <h5>Legal</h5>
+                  <ul class="list-unstyled">
+                    <li class="mb-2">
+                      <a href="/docs/5.0/getting-started/">Term of Services</a>
+                    </li>
+                    <li class="mb-2">
+                      <a href="/docs/5.0/examples/starter-template/"
+                        >Privacy Policy</a
+                      >
+                    </li>
+                    <li class="mb-2">
+                      <a href="/docs/5.0/getting-started/webpack/"
+                        >Licence & Regi</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col col-xs-3">
+                  <h5>Contact</h5>
+                  <ul class="list-unstyled mb-3">
+                    <li class="mb-2">+91-22_223282</li>
+                    <li class="mb-2">Vishal V</li>
+                  </ul>
+
+                  <h5>Address</h5>
+                  <ul class="list-unstyled mb-3">
+                    <li class="mb-2">Mumbai</li>
+                    <li class="mb-2">Pune</li>
+                  </ul>
+
+                  <h5>Social</h5>
+                  <ul class="list-unstyled mb-3">
+                    <li class="mb-2">Mumbai</li>
+                    <li class="mb-2">Pune</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="./assets/fontawesome/fontawesome.min.js"
+    ></script>
+
+    <script
+      type="text/javascript"
+      src="./js/mouse-background-effect.js"
+    ></script>
+ <script>
+      $(document).ready(() => {
+        var myCarousel = document.querySelector("#carouselExampleFade");
+        var _carousel = new bootstrap.Carousel(myCarousel, {
+          interval: 2000,
+          keyboard: true,
+          ride: "carousel",
+          touch: true,
+          wrap: true,
+          pause: "hover",
+        });
+        var projectTitle = document.getElementById("project-title");
+        myCarousel.addEventListener("slide.bs.carousel", function () {
+          var currentIndex = $(".carousel-item.active").index() + 1;
+          projectTitle.innerHTML = "Project " + currentIndex;
+        });
+      });
+    </script>
+  </body>
+</html>
