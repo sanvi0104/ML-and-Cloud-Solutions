@@ -2,16 +2,21 @@ $(document).ready(function () {
   $(".carousel-control-prev").addClass("disabled");
   var carouselWidth = $(".carousel-inner")[0].scrollWidth;
   var cardWidth = $(".carousel-item").width();
+  console.log(cardWidth);
+  console.log(carouselWidth);
   var scrollPosition = 0;
 
   $(".carousel-control-next").on("click", function (e) {
+    console.log(scrollPosition);
+    console.log(carouselWidth - cardWidth * 3);
     $(".carousel-control-prev").removeClass("disabled");
-    
-    if (scrollPosition >= 608) {
+
+    if (scrollPosition > 636) {
       $(".carousel-control-next").addClass("disabled");
     }
 
-    if (scrollPosition < carouselWidth - cardWidth * 3) {
+    if (scrollPosition < carouselWidth - cardWidth * 2) {
+      console.log("are you here");
       scrollPosition += cardWidth;
       $(".carousel-inner").animate(
         {

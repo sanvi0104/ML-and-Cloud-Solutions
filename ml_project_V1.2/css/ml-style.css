@@ -637,7 +637,7 @@ transform: skewY(10deg);
   margin: 0 1em 0 0;
   background-color: #000;
 }
-#featureContainer .carousel-inner .carousel-item:first-child .card {margin: 0;}
+#featureContainer .carousel-inner .carousel-item:first-child .card {margin-right: 1rem;}
 
 /* #featureContainer .card-img-overlays {
   color: #fff;
