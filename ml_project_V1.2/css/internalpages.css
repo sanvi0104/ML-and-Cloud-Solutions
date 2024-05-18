@@ -651,6 +651,118 @@ font-size: 3.5rem;
 }
 /* Services details CSS ends */
 
+.aboutus-banner-image {
+  background:url("../images/about_us/about-us-banner-image.png") no-repeat;
+  position: absolute;
+  width: 490px;
+  height: 490px;
+  top: 0;
+  right: 0;
+}
+
+.carousel-inner {
+  max-height: 500px;
+}
+.carousel-control-prev, .carousel-control-next {
+  bottom: unset !important;
+  top: unset !important;
+  position: relative !important;
+}
+
+#featureContainer .card-text {
+  bottom: 40px !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+#featureContainer .card-text {
+  background-color: #000 !important;
+  padding: 10px 15px !important;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  max-width: 300px;
+  bottom: 50px;
+  left: 0;
+  position: absolute;
+}
+
+#featureContainer .card:hover .overlay {
+  height: 10rem;
+}
+
+#featureContainer .card:hover .card-text {
+    bottom: 40px !important;
+    background: transparent !important;
+}
+
+.card:hover .subtext-wrapper {
+  opacity: 1;
+  bottom: -2rem;
+  position: absolute;
+  width: 100%;
+  transition: all 1s ease-in-out;
+}
+
+#featureCarousel {padding: 0}
+
+ #featureContainer .card {
+  margin: 0 1em 0 0;
+  background-color: #000;
+}
+#featureContainer .carousel-inner .carousel-item:first-child .card {margin-right: 1rem;}
+
+#featureContainer a{
+  text-decoration: none;
+}
+#featureContainer .indicator{
+  background: #ed2b24;
+  padding: 10px 18px;
+  border-radius: 50px;
+  color: #fff;
+  opacity: 1;
+}
+#featureContainer .indicator:hover{
+  background-color: #ed2b24;
+  transition: 200ms;
+}
+#featureContainer .indicator,
+#featureContainer .indicator:hover{
+  color: white;
+  transition: 200ms;
+}
+
+#featureContainer .indicator.disabled {
+  color: lightgray;
+  background: #888888;
+}
+
+.client-container p {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 2;
+  margin: 10px 180px;
+}
+
+.client-container .kathreftis-client {
+  background:url("../images/about_us/kathreftis-client-image.png") no-repeat;
+  width: 590px;
+  height: 238px;
+}
+
+.client-container .unotech-client {
+  background: url("../images/about_us/unotech-client-image.png") no-repeat;
+  width: 590px;
+  height: 238px;
+}
+
+.casestudy-subtext {
+  font-size: 28px;
+  font-weight: normal;
+  padding: 20px 0;
+}
+
 @media (min-width: 1024px) {
   .service-card-padding {
       padding-top: 10rem;
@@ -673,6 +785,22 @@ font-size: 3.5rem;
   }
 
   .bd-footer {padding: 0}
+
+  #featureContainer .carousel-item {
+    flex: 0 0 calc(100%);
+  }
+  
+  #featureContainer .carousel.pointer-event,
+  #featureContainer .carousel-inner,
+  #featureContainer .card {padding: 0; margin: 0;}
+  
+  #featureContainer .card:hover .overlay {height: 8rem;}
+  
+  #featureContainer .card:hover .card-text {bottom: 1rem !important;}
+  
+  #featureContainer .card .card-text {font-size: 1rem;}
+  
+  #featureContainer .card .subtext-wrapper {font-size: .8rem;}
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -692,6 +820,17 @@ font-size: 3.5rem;
 .get-quotes-wrapper h2 {font-size:1.5rem;}
 
 .get-quotes-wrapper p {font-size: 1rem;}
+}
+
+@media screen and (min-width: 576px) {
+  #featureContainer .carousel-inner {
+    display: flex;
+  }
+  #featureContainer .carousel-item {
+    display: block;
+    margin-right: 0;
+    flex: 0 0 calc(100%/2);
+  }
 }
 
 
