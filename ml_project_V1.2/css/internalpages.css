@@ -27,8 +27,7 @@
 
 /* Body and Common CSS Starts */
 .home-bg {
-    /* background: #000000; */
-    background: #050413;
+    background: #000000;
     color: #fff;
     overflow: auto;
     background-size: cover;
@@ -54,6 +53,7 @@
   border: 0;
 }
 
+.container {background: #050413;}
 .textred {color: red;}
 p, .subtext {color: #d0daf5;}
 /* Body and Common CSS Ends */
@@ -212,27 +212,32 @@ p, .subtext {color: #d0daf5;}
 }
 
 /* Partner CSS Starts */
-.partner-container .partner-block {
+.partner-container .partner-block,
+.aboutus-container .aboutus-block {
     background: #1E1D2A;
     border-radius: 15px;
     display: flex;
     padding: 6.5rem 0;
 }
 
-.partner-block h3 {
+.partner-block h3,
+.aboutus-block h3 {
     font-family: 'Archivo', sans-serif;
     margin-bottom: 2rem;
     font-size: 52px;
     font-weight: 600;
 }
 
-.partner-image-wrapper {position: relative;}
+.partner-image-wrapper,
+.aboutus-image-wrapper {position: relative;}
 
-.partner-text-wrapper {
-    padding: 0 6rem 0 0;
+.partner-text-wrapper,
+.aboutus-text-wrapper {
+    padding: 0 6rem;
 }
 
-.partner-text-wrapper p {
+.partner-text-wrapper p,
+.aboutus-text-wrapper p {
     font-family: 'Inter', sans-serif;
     color: #d0daf5;
     text-align: justify;
@@ -260,31 +265,64 @@ p, .subtext {color: #d0daf5;}
     left: 80px;
 }
 
-.partner-image {
+.aboutus-block .company-overview-image {
+  background: url("../images/about_us/aboutus-overview.png") no-repeat;
+  width: 650px;
+  height: 650px;
+  display: block;
+  top: -11rem;
+  left: -2rem;
+  background-size: contain;
+}
+
+.aboutus-block .methodology-image {
+  background: url("../images/about_us/aboutus-our-methodology.png") no-repeat;
+  width: 650px;
+  height: 650px;
+  display: block;
+  top: -80px;
+  left: 0;
+  background-size: contain;
+}
+
+.aboutus-block .our-values-image {
+  background: url("../images/about_us/aboutus-our-values.png") no-repeat;
+  width: 1290px;
+  height: 650px;
+  display: block;
+  top: -11.5rem;
+  left: -24rem;
+  background-size: contain;
+}
+
+.partner-image,
+.aboutus-image {
     position: absolute;
     top: 0;
 }
 
 .channel-partner-image {
     background: url("../images/partner_program/channel-partner-image.png") no-repeat;
-    width: 793px;
-    height: 571px;
-    right: -40px;
-    top: -12.5rem;
+    width: 700px;
+    height: 480px;
+    right: -4rem;
+    top: -10rem;
+    background-size: contain;
 }
 
 .product-partner-image {
     background: url("../images/partner_program/product-partner-image.png") no-repeat;
-    width: 778px;
-    height: 650px;
-    left: -13rem;
-    top: -184px;
+    width: 700px;
+    height: 480px;
+    left: 2rem;
+    top: -9rem;
+    background-size: contain;
 }
 
 .get-quotes-wrapper {
-    margin: 0; /*10rem 0 5rem;*/
     border-radius: 15px;
-    padding: 40px 20px;
+    padding: 40px 30px;
+    margin: 8rem 0;
     background: linear-gradient(to right, #373737 0%, #1E1D2A 40%, #000 100%);
 }
 
