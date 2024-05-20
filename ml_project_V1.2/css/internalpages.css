@@ -177,9 +177,9 @@ p, .subtext {color: #d0daf5;}
 .banner-text-wrapper .drive-your-business-text {
     font-family: 'Archivo', sans-serif;
     font-weight: 600;
-    line-height: 182px;
-    font-size: 5.3rem;
-    width: 70%;
+    line-height: 130px;
+    font-size: 3.9rem;
+    /* width: 70%; */
     text-align: left;
     display: flex;
     justify-content: left;
@@ -190,25 +190,26 @@ p, .subtext {color: #d0daf5;}
 .banner-text-wrapper .lead {
     font-family: 'Inter', sans-serif;
     color: #d0daf5;
-    width: 40%;
+    /* width: 40%; */
     line-height: 1.8;
     font-size: 1.4rem;
     text-align: justify;
 }
 
-.banner-text-wrapper .first-text {padding-top: 7rem}
+.banner-text-wrapper .first-text {padding-top: 9rem}
 
 .banner-text-wrapper .second-text {transition: color 1s ease-in-out;}
 
 .banner-text-wrapper .second-text:hover {color: red}
 
-.banner-text-wrapper .partner-banner-image {
-  position: absolute;
+.partner-banner-image {
+  /* position: absolute; */
   background: url(../images/partner_program/partner-banner.png) no-repeat;
   width: 490px;
   height: 490px;
-  top: 0;
-  right: 0;
+  /* top: 0;
+  right: 0; */
+  background-size: contain;
 }
 
 /* Partner CSS Starts */
@@ -763,6 +764,47 @@ font-size: 3.5rem;
   padding: 20px 0;
 }
 
+@media (min-width: 1201px) and (max-width: 1400px) {
+  .banner-text-wrapper .drive-your-business-text {
+    font-size: 3.3rem;
+    line-height: 142px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .banner-text-wrapper .drive-your-business-text {
+    font-size: 2.4rem;
+    line-height: 2;
+  }
+
+  .banner-text-wrapper .first-text {padding-top: 9rem;}
+
+  .banner-text-wrapper .lead {font-size: 1rem;}
+
+  .partner-banner-image {width: 90%;}
+
+  .partner-container .partner-block {padding: 4.5rem 0;}
+
+  .partner-text-wrapper {padding: 0 5rem;}
+
+  .partner-block h3 {font-size: 2rem;}
+
+  .partner-text-wrapper p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.channel-partner-image {
+  width: 550px;
+  right: -1rem;
+  top: -7.5rem;
+}
+.product-partner-image {
+  width: 450px;
+  top: -4rem;
+}
+}
+
 @media (min-width: 1024px) {
   .service-card-padding {
       padding-top: 10rem;
@@ -801,6 +843,51 @@ font-size: 3.5rem;
   #featureContainer .card .card-text {font-size: 1rem;}
   
   #featureContainer .card .subtext-wrapper {font-size: .8rem;}
+
+  /* Partner Page CSS */
+
+  .banner-text-wrapper .drive-your-business-text {
+    font-size: 2rem;
+    line-height: 2;
+  }
+
+  .banner-text-wrapper .first-text {padding-top: 7rem;}
+
+  .banner-text-wrapper .lead {font-size: 1rem;}
+
+  .partner-banner-image {width: 100%;}
+
+  .partner-container .partner-block {padding: 4.5rem 0;}
+
+  .partner-text-wrapper, .partner-image-wrapper {
+    padding: 0 3rem;
+  }
+
+  .partner-image-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  .partner-block h3 {font-size: 2rem;}
+
+  .partner-text-wrapper p {
+    font-size: 1rem;
+    line-height: 1.7;
+}
+
+.channel-partner-image {
+  width: 550px;
+  right: -1rem;
+  top: -7.5rem;
+  display: block;
+  position: initial;
+}
+.product-partner-image {
+  width: 450px;
+  top: -4rem;
+  display: block;
+  position: initial;
+}
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
