@@ -383,6 +383,62 @@ p, .subtext {color: #d0daf5;}
   box-shadow: none;
   color: #62646C;
 }
+
+.contactus-location-container {margin-top: 80px;}
+
+.contactus-location-container h1 {font-size: 48px; margin-bottom: 30px;}
+
+.contactus-location-container p {font-size: 18px;}
+
+.swiper-wrapper {margin: 0 0 80px;}
+
+.swiper-scrollbar {top: 300px !important}
+
+.swiper-scrollbar {background: #2F2F37 !important; height: 1px !important}
+
+.swiper-scrollbar-drag {background: #fff !important;}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background: #1e1d2b;
+  padding: 10px 22px;
+  border-radius: 50px;
+  color: #ed2b24 !important;
+  opacity: 1;
+  top: 60px !important;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {font-size: 16px !important;}
+
+.card {
+  width: 65%; 
+  margin: 0 4rem;
+  border: none;
+  background: none !important;
+}
+
+.card .card-title {
+  font-family: "Archivo", sans-serif;
+  font-size: 32px;
+  color: #fff;
+  margin: 0 0 25px;
+}
+
+.card .card-body a {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.card .card-body a::after {
+  content: '>';
+  padding: 0 10px;
+  font-size: 19px;
+  vertical-align: middle;
+}
+/* .swiper-slide .card-body {background: none;} */
+
 /* Partner CSS Starts */
 
 /* Services CSS Starts */
