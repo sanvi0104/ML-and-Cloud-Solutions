@@ -270,42 +270,37 @@ p, .subtext {color: #d0daf5;}
   background: url("../images/about_us/aboutus-overview.png") no-repeat;
   width: 650px;
   height: 650px;
-  display: block;
   top: -11rem;
   left: -2rem;
-  background-size: contain;
 }
 
 .aboutus-block .methodology-image {
   background: url("../images/about_us/aboutus-our-methodology.png") no-repeat;
   width: 650px;
   height: 650px;
-  display: block;
   top: -80px;
   left: 0;
-  background-size: contain;
 }
 
 .aboutus-block .our-values-image {
   background: url("../images/about_us/aboutus-our-values.png") no-repeat;
   width: 1290px;
   height: 650px;
-  display: block;
   top: -11.5rem;
   left: -24rem;
-  background-size: contain;
 }
 
-.partner-image,
-.aboutus-image {
+.partner-block .partner-image,
+.aboutus-container .aboutus-block .aboutus-image {
     position: absolute;
-    top: 0;
+    background-size: contain;
+    display: block;
 }
 
 .channel-partner-image {
     background: url("../images/partner_program/channel-partner-image.png") no-repeat;
-    width: 700px;
-    height: 480px;
+    width: 730px;
+    height: 510px;
     right: -4rem;
     top: -10rem;
     background-size: contain;
@@ -313,9 +308,9 @@ p, .subtext {color: #d0daf5;}
 
 .product-partner-image {
     background: url("../images/partner_program/product-partner-image.png") no-repeat;
-    width: 700px;
-    height: 480px;
-    left: 2rem;
+    width: 7300px;
+    height: 610px;
+    left: 1rem;
     top: -9rem;
     background-size: contain;
 }
@@ -359,6 +354,34 @@ p, .subtext {color: #d0daf5;}
     box-shadow: 10px 10px #640909;
     background-color: #640909 !important;
     border-color: transparent;
+}
+
+.contact-form-container label {
+  font-family: "Archivo", sans-serif;
+  font-size: 16px;
+}
+
+.contact-form-container input,
+.contact-form-container select {
+  background: transparent;
+  color: #62646C;
+  border: none;
+  border-bottom: 1px solid #2F2F37;
+  border-radius: 0;
+  font-size: 18px;
+  padding: 6px 0;
+}
+
+.contact-form-container input::placeholder {
+  color: #62646C;
+}
+
+.contact-form-container input:focus {
+  outline: none;
+  background: transparent;
+  border-bottom: 1px solid #2F2F37;
+  box-shadow: none;
+  color: #62646C;
 }
 /* Partner CSS Starts */
 
@@ -763,6 +786,71 @@ font-size: 3.5rem;
   font-weight: normal;
   padding: 20px 0;
 }
+
+/* Our Values CSS Starts */
+.our-values-banner-image {
+  background:url("../images/about_us/our-values-banner-image.png") no-repeat;
+  position: absolute;
+  width: 490px;
+  height: 490px;
+  top: 0;
+  right: 0;
+}
+
+.aboutus-block .integrity-image {
+  background: url("../images/about_us/integrity-bg-image.png") no-repeat;
+  width: 700px;
+  height: 800px;
+  top: -13rem;
+  left: -1.3rem;
+}
+
+.aboutus-block .innovation-image {
+  background: url("../images/about_us/innovation-bg-image.png") no-repeat;
+  width: 746px;
+  height: 759px;
+  top: -16rem;
+  left: -5rem;
+}
+
+.aboutus-block .customer-focus-image {
+  background: url("../images/about_us/customer-focus-bg-image.png") no-repeat;
+  width: 997px;
+  height: 640px;
+  top: 0;
+  left: 0;
+  position: relative !important;
+}
+
+/* Our Values CSS Ends */
+
+/* Contact Us CSS Starts */
+.contactus-container hr {
+  color: #1c1c21;
+  opacity: 1;
+}
+
+.contact-info a{
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #f2f2f3;
+  text-decoration: none;
+  border-bottom: 1px solid #2F2F37;
+  padding-bottom: 5px;
+}
+
+.contact-info a::after {
+  content: "";
+  background: url(../images/contact_us/contact-info-img.png) no-repeat;
+  width: 18px;
+  height: 16px;
+  display: inline-block;
+  margin: 0 10px;
+}
+
+
+/* Contact Us CSS Ends */
+
 
 @media (min-width: 1201px) and (max-width: 1400px) {
   .banner-text-wrapper .drive-your-business-text {

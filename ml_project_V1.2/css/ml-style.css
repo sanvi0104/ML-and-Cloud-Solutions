@@ -117,6 +117,8 @@ p, .subtext {color: #D0DAF5;}
 }
   .lead {
     color: #d0daf5;
+    width: 80%;
+    margin: 2rem auto 2rem;
   }
   .nav-link {
     color: #fff;
@@ -227,15 +229,16 @@ p, .subtext {color: #D0DAF5;}
     -webkit-text-stroke-width: 1px;
     color: #000 !important;
     -webkit-text-stroke-color: #fff;
-    transition: color 0.5s ease; /* Smooth transition */
+    transition: color 4s ease-in-out; /* Smooth transition */
     overflow: hidden;
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     position: relative;
     z-index: 1;
     margin: 0 20px;
   }
   .drive-your-business-text:hover {
-    animation: slide-in 2s 1 ease-in forwards;
+    -webkit-text-fill-color: #fff;
+    /* transition: all 5s ease-in-out; */
   }
 
 .services-wrapper {position: relative; display: inline-flex;}
