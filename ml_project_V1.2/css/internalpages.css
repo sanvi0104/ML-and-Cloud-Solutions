@@ -56,6 +56,8 @@
 .container {background: #050413;}
 .textred {color: red;}
 p, .subtext {color: #d0daf5;}
+
+
 /* Body and Common CSS Ends */
 
 /* Header and footer CSS Starts */
@@ -172,7 +174,10 @@ p, .subtext {color: #d0daf5;}
     background: #050413;
 } */
 
-.banner-text-wrapper {position: relative;}
+.banner-text-wrapper {
+  position: relative;
+  margin-bottom: 100px;
+}
 
 .banner-text-wrapper .drive-your-business-text {
     font-family: 'Archivo', sans-serif;
@@ -390,16 +395,16 @@ p, .subtext {color: #d0daf5;}
 
 .contactus-location-container p {font-size: 18px;}
 
-.swiper-wrapper {margin: 0 0 80px;}
+.contactus-location-container .swiper-wrapper {margin: 0 0 80px;}
 
-.swiper-scrollbar {top: 300px !important}
+.contactus-location-container .swiper-scrollbar {top: 300px !important}
 
-.swiper-scrollbar {background: #2F2F37 !important; height: 1px !important}
+.contactus-location-container .swiper-scrollbar {background: #2F2F37 !important; height: 1px !important}
 
-.swiper-scrollbar-drag {background: #fff !important;}
+.contactus-location-container .swiper-scrollbar-drag {background: #fff !important;}
 
-.swiper-button-next,
-.swiper-button-prev {
+.contactus-location-container .swiper-button-next,
+.contactus-location-container .swiper-button-prev {
   background: #1e1d2b;
   padding: 10px 22px;
   border-radius: 50px;
@@ -408,30 +413,30 @@ p, .subtext {color: #d0daf5;}
   top: 60px !important;
 }
 
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after,
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {font-size: 16px !important;}
+.contactus-location-container .swiper-button-next:after,.contactus-location-container .swiper-rtl .swiper-button-prev:after,
+.contactus-location-container .swiper-button-prev:after,.contactus-location-container .swiper-rtl .swiper-button-next:after {font-size: 16px !important;}
 
-.card {
+.contactus-location-container .swiper-wrapper .card {
   width: 65%; 
   margin: 0 4rem;
   border: none;
   background: none !important;
 }
 
-.card .card-title {
+.contactus-location-container .swiper-wrapper .card .card-title {
   font-family: "Archivo", sans-serif;
   font-size: 32px;
   color: #fff;
   margin: 0 0 25px;
 }
 
-.card .card-body a {
+.contactus-location-container .card .card-body a {
   font-family: "Inter", sans-serif;
   font-size: 16px;
   text-decoration: none;
 }
 
-.card .card-body a::after {
+.contactus-location-container .card .card-body a::after {
   content: '>';
   padding: 0 10px;
   font-size: 19px;
@@ -442,26 +447,31 @@ p, .subtext {color: #d0daf5;}
 /* Partner CSS Starts */
 
 /* Services CSS Starts */
-.banner-text-wrapper .service-banner-image {
+/* .banner-text-wrapper .service-banner-image { */
   /* position: relative;  */
   /* background: url("../images/services/services-banner-image.png") no-repeat; */
   /* background-size: contain; */
-  width: 100%;
+  /* width: 100%; */
   /* height: 100vh; */
-  top: -11rem;
-  right: 0;
+  /* top: -11rem; */
+  /* right: 0; */
   /* background: url("../images/services/services-banner-image.png") no-repeat;
-  width: 1260px;
-  height: 632px;
-  top: -11rem;
-  right: 0; */
-}
+  /* width: 1260px; */
+  /* height: 632px; */
+  /* top: -11rem; */
+  /* right: 0; */
+/* } */
 
 .banner-text-wrapper .text-container {
   display: inline-block;
   margin-bottom: 30px;
+  position: absolute;
+  top: 7%;
+  left: 20px;
+  /* display: inline-block;
+  margin-bottom: 30px;
   position: relative;
-  top: -37rem;
+  top: -37rem; */
 }
 
 .banner-text-wrapper .text-container p {
@@ -479,9 +489,9 @@ margin-bottom: .3rem;
 
 .banner-text-wrapper .service-scroll-text {
   font-family: "Manrope", sans-serif;
-  position: relative;
-  right: -46rem;
-  top: -6rem;
+  position: absolute;
+  right: -20px;
+  bottom: 4%;
   display: inline-block;
   font-size: 14px;
   text-transform: uppercase;
@@ -908,14 +918,24 @@ font-size: 3.5rem;
 /* Contact Us CSS Ends */
 
 
-@media (min-width: 1201px) and (max-width: 1400px) {
+@media (min-width: 1200px) and (max-width: 1399px) {
   .banner-text-wrapper .drive-your-business-text {
     font-size: 3.3rem;
     line-height: 142px;
   }
+
+  .banner-text-wrapper .text-container p {font-size: .8rem;}
+
+  .banner-text-wrapper .text-container .drive-your-business-text {font-size: 3rem;}
+
+  .banner-text-wrapper .service-scroll-text {
+    font-size:.8rem;
+    bottom: 2%;
+    right: -40px;
+  }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .banner-text-wrapper .drive-your-business-text {
     font-size: 2.4rem;
     line-height: 2;
@@ -946,6 +966,19 @@ font-size: 3.5rem;
 .product-partner-image {
   width: 450px;
   top: -4rem;
+}
+
+.banner-text-wrapper .text-container {top: 6%;}
+
+.banner-text-wrapper .text-container p {font-size: .8rem;}
+
+.banner-text-wrapper .text-container .drive-your-business-text {font-size: 2.2rem;}
+
+.banner-text-wrapper .service-scroll-text {
+  font-size: .7rem;
+  bottom: 0;
+  right: -20px;
+  width: 15%;
 }
 }
 
@@ -1034,6 +1067,21 @@ font-size: 3.5rem;
 }
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+.banner-text-wrapper .text-container {top: 6%;}
+
+.banner-text-wrapper .text-container p {font-size: .8rem;}
+
+.banner-text-wrapper .text-container .drive-your-business-text {font-size: 1.6rem;}
+
+.banner-text-wrapper .service-scroll-text {
+  font-size: .6rem;
+  bottom: -1%;
+  right: -20px;
+  width: 15%;
+}
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .services-block .card:hover .drive-your-business-text {
     font-size: 1.8rem;
@@ -1051,6 +1099,21 @@ font-size: 3.5rem;
 .get-quotes-wrapper h2 {font-size:1.5rem;}
 
 .get-quotes-wrapper p {font-size: 1rem;}
+
+.container .section-block {padding:3rem 1rem !important;}
+
+.banner-text-wrapper .text-container {top: 2%; left: 5px;}
+
+.banner-text-wrapper .text-container p {font-size: 2.8vw;}
+
+.banner-text-wrapper .text-container .drive-your-business-text {font-size: 3.2vw;}
+
+.banner-text-wrapper .service-scroll-text {
+  font-size: 1.3vw;
+  bottom: -6%;
+  right: -20px;
+  width: 15%;
+}
 }
 
 @media screen and (min-width: 576px) {

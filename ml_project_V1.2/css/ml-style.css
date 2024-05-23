@@ -1,6 +1,37 @@
 @import url("./keyframes.css");
 
+/* archivo-regular - latin Font*/
+@font-face {
+  font-display: swap; 
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/archivo/archivo-v19-latin-regular.woff2') format('woff2'); 
+}
+/* Inter Font*/
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../assets/fonts/inter/inter-v13-latin-regular.woff2') format('woff2'); 
+}
+
+/* manrope-regular - latin */
+@font-face {
+font-display: swap;
+font-family: 'Manrope';
+font-style: normal;
+font-weight: 400;
+src: url('../fonts/manrope-v15-latin-regular.woff2') format('woff2');
+}
+
 p, .subtext {color: #D0DAF5;}
+
+h1 {
+  font-family: "Archivo", sans-serif;
+  font-size: 62px !important;
+}
 
 .carousel-control-prev,
 .carousel-control-next {
@@ -78,7 +109,7 @@ p, .subtext {color: #D0DAF5;}
   /* transition: box-shadow 1s ease-in; */
 }
 .about-us-paragraph {
-  font-size: 0.85rem;
+  font-size: 1.3rem;
 }
 .mouseBackground {
   position: relative;
@@ -225,19 +256,34 @@ p, .subtext {color: #D0DAF5;}
     color: #fff;
   }
 
-  .drive-your-business-text {
-    -webkit-text-stroke-width: 1px;
+  .home-banner.drive-your-business-text {
+    /* -webkit-text-stroke-width: 1px;
     color: #000 !important;
     -webkit-text-stroke-color: #fff;
-    transition: color 4s ease-in-out; /* Smooth transition */
     overflow: hidden;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     position: relative;
-    z-index: 1;
-    margin: 0 20px;
+    z-index: 1;*/
+  margin: 0 20px;
+  z-index: 1;
+  position: relative;
+  display: inline-block;
+  font-size: 4.8em;
+  color: #000 !important;
+  overflow: hidden;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #fff;
+  background: linear-gradient(to right, #fff, #fff 50%, #000 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 500ms ease;
   }
-  .drive-your-business-text:hover {
-    -webkit-text-fill-color: #fff;
+  .home-banner.drive-your-business-text:hover {
+    /* -webkit-text-fill-color: #fff; */
+    background-position: 0 100%;
     /* transition: all 5s ease-in-out; */
   }
 
@@ -263,12 +309,12 @@ p, .subtext {color: #D0DAF5;}
     left: 150px;
     transition: transform .9s ease-in-out;
 }
-.services-wrapper h3 {
+.services-wrapper h2 {
   color: #fff;
   transition: color 1s ease-in-out;
 }
 
-.services-wrapper:hover h3 {
+.services-wrapper:hover h2 {
   color: red
 }
 .services-wrapper:hover .icon-wrapper .services-icon-small {
@@ -293,6 +339,27 @@ p, .subtext {color: #D0DAF5;}
     border-radius: 15px;
   } */
 
+  .service-card .drive-your-business-text {
+    -webkit-text-stroke-width: 1px;
+    color: #000 !important;
+    -webkit-text-stroke-color: #fff;
+    transition: color 0.5s ease;
+    overflow: hidden;
+    font-size: 3.5rem;
+    position: relative;
+    z-index: 1;
+    margin: 0 20px;
+  }
+
+  .card:hover .drive-your-business-text {
+    -webkit-text-stroke-width: 1px;
+    color: #fff !important;
+    -webkit-text-stroke-color: #fff;
+    transition: color 0.5s ease;
+    overflow: hidden;
+    font-size: 3.5rem;
+}
+
   #featureContainer .card {overflow: hidden;}
   #featureContainer .card-text {
     bottom: 40px !important;
@@ -310,7 +377,8 @@ p, .subtext {color: #D0DAF5;}
     padding: 10px 15px !important;
     color: #fff;
     border-radius: 0 10px 10px 0;
-    max-width: 300px;
+    max-width: 350px;
+    font-size: 20px;
     bottom: 50px;
     left: 0;
     position: absolute;
@@ -502,6 +570,7 @@ p, .subtext {color: #D0DAF5;}
 
 #crossCarouselContainer{
 transform: skewY(10deg);
+padding: 0;
 }
 #crossCarouselContainer img{margin-right: 1rem;}
 /* 
@@ -576,7 +645,7 @@ transform: skewY(10deg);
 
 .card:hover .card-text,
 #featureContainer .card:hover .card-text {
-  bottom: 100px !important;
+  bottom: 70px !important;
   background: transparent !important;
 }
 
@@ -603,19 +672,22 @@ transform: skewY(10deg);
 }
 
  .card:hover .overlay {
-  height: 15rem;
+  height: 12rem;
 }
+
+.subtext-wrapper .card-sub-text {font-size: 18px;}
 
 #featureContainer .card:hover .overlay {height: 10rem;}
 
 .see-more-btn {
-  background: url(../images//services/charm_arrow-up.svg) no-repeat 85px 0px;
+  background: url(../images//services/charm_arrow-up.svg) no-repeat 88px 0px;
   color: #fff;
   width: 130px;
   float: right;
   height: 42px;
   padding: 10px;
   text-decoration: none;
+  font-size: 18px;
 }
 
 .see-more-btn:hover {color: red;filter: red}
@@ -709,6 +781,36 @@ transform: skewY(10deg);
   background: #888888;
 }
 
+.swiper-container {
+  height: calc(100vh - 20px);
+  margin: 60px;
+}
+
+
+.swiper-slide {
+  width: 36.5vw !important;
+  overflow: hidden;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.swiper-wrapper {
+  -webkit-transition-timing-function:linear!important; 
+  -o-transition-timing-function:linear!important;
+  transition-timing-function:linear!important; 
+}
+
+.about-container {
+
+}
+
+
 @media (max-width: 991px){
   .navbar.sticky-top {padding:10px !important}
   .navbar-nav > li > a,
@@ -767,27 +869,3 @@ transform: skewY(10deg);
   .container .project-container {margin: 20px 0 !important;}
 }
 
-.swiper-container {
-  height: calc(100vh - 20px);
-  margin: 60px;
-}
-
-
-.swiper-slide {
-  width: 36.5vw !important;
-  overflow: hidden;
-  background-position: top;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-.swiper-wrapper {
-  -webkit-transition-timing-function:linear!important; 
-  -o-transition-timing-function:linear!important;
-  transition-timing-function:linear!important; 
-}
