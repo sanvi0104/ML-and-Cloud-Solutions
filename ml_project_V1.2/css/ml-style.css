@@ -554,7 +554,7 @@ transform: skewY(10deg);
   -webkit-text-stroke-width: 1px;
   color: #fff !important;
   -webkit-text-stroke-color: #fff;
-  transition: color 0.5s ease; /* Smooth transition */
+  transition: color 0.5s ease-in-out; /* Smooth transition */
   overflow: hidden;
   font-size: 3.5rem;
 }
@@ -765,4 +765,29 @@ transform: skewY(10deg);
   .service-card.card:hover .subtext-wrapper {font-size: .8rem;}
   #featureCarousel .card:hover .subtext-wrapper {bottom: -3rem;}
   .container .project-container {margin: 20px 0 !important;}
+}
+
+.swiper-container {
+  height: calc(100vh - 20px);
+  margin: 60px;
+}
+
+
+.swiper-slide {
+  width: 36.5vw !important;
+  overflow: hidden;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.swiper-wrapper {
+  -webkit-transition-timing-function:linear!important; 
+  -o-transition-timing-function:linear!important;
+  transition-timing-function:linear!important; 
 }

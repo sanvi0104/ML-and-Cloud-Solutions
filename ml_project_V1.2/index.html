@@ -8,6 +8,7 @@
   <link href="./css/ml-style.css" rel="stylesheet" />
   <link href="./css/bootstrap.min.css" rel="stylesheet" />
   <link href="./assets/fontawesome/fontawesome.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
@@ -317,42 +318,37 @@
             <div class="row mx-auto my-auto justify-content-center">
               <!-- <div class="carousel slide" data-bs-ride="carousel"> -->
               <!-- Add Slides To The Carousel -->
-              <div id="crossCarousel" class="carousel slide" data-ride="carousel" data-bs-interval="200">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="images/crossed_carousel/cross_01.jpg" class="img-fluid">
+              <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="images/crossed_carousel/carousel_01.jpg" />
                   </div>
-                  <div class="carousel-item">
-                    <img src="images/crossed_carousel/cross_01.jpg" class="img-fluid">
+                  <div class="swiper-slide">
+                    <img src="images/crossed_carousel/carousel_02.jpg" />
                   </div>
-                  <div class="carousel-item">
-                    <img src="images/crossed_carousel/cross_01.jpg" class="img-fluid">
+                  <div class="swiper-slide">
+                    <img src="images/crossed_carousel/carousel_03.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/crossed_carousel/carousel_04.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/crossed_carousel/carousel_01.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/crossed_carousel/carousel_02.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/crossed_carousel/carousel_03.jpg" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/crossed_carousel/carousel_04.jpg" />
                   </div>
                 </div>
+                <!-- <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div> -->
+                <div class="swiper-pagination"></div>
               </div>
-              <!-- <div class="carousel-inner" role="listbox">
-                  <div class="carousel-item active">
-                    <div class="col-md-6">
-                      <img src="images/crossed_carousel/cross_01.jpg" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-6">
-                      <img src="images/crossed_carousel/cross_02.jpg" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-6">
-                      <img src="images/crossed_carousel/cross_03.jpg" class="img-fluid">
-                    </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="col-md-6">
-                      <img src="images/crossed_carousel/cross_04.jpg" class="img-fluid">
-                    </div>
-                  </div>
-                </div> -->
-              <!-- </div> -->
             </div>
           </div>
         </div>
@@ -479,19 +475,22 @@
   <script type="text/javascript" src="./assets/fontawesome/fontawesome.min.js"></script>
 
   <script type="text/javascript" src="./js/mouse-background-effect.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
-    // $(document).ready(() => {
-    //   var myCarousel = document.querySelector("#crossCarousel");
-    //   var _carousel = new bootstrap.Carousel(myCarousel, {
-    //     interval: 100,
-    //     wrap: false,
-    //   });
-    //   var projectTitle = document.getElementById("project-title");
-    //   myCarousel.addEventListener("slide.bs.carousel", function () {
-    //     var currentIndex = $(".carousel-item.active").index() + 1;
-    //     projectTitle.innerHTML = "Project " + currentIndex;
-    //   });
-    // });
+    var swiper = new Swiper(".mySwiper", {
+      loop: true,
+      freeMode: true,
+      spaceBetween: 10,
+      slidesPerView: 2,
+      loop: true,
+      autoplay: {
+        delay: 1,
+        disableOnInteraction: true
+      },
+      freeMode: true,
+      speed: 3000,
+      freeModeMomentum: false
+    });
   </script>
 </body>
 
