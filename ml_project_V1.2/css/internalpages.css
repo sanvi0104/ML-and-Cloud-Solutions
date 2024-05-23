@@ -176,7 +176,7 @@ p, .subtext {color: #d0daf5;}
 
 .banner-text-wrapper {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 70px;
 }
 
 .banner-text-wrapper .drive-your-business-text {
@@ -509,18 +509,20 @@ margin-bottom: .3rem;
   position: absolute;
   top: -64px;
   left: 80px;
-  transition: transform 1s ease-in-out;   
+  transition: transform 1s ease-in-out;
+  background-size: contain;   
 }
 
 .services-wrapper .icon-wrapper .services-icon-small {
   background: url("../images/services/services-home-icon-small.png") no-repeat;
   width: 46px;
-    height: 48px;
-    display: inline-block;
-    position: absolute;
-    top: 6px;
-    left: 150px;
-    transition: transform .9s ease-in-out;
+  height: 48px;
+  display: inline-block;
+  position: absolute;
+  top: 6px;
+  left: 150px;
+  transition: transform .9s ease-in-out;
+  background-size: contain; 
 }
 .services-wrapper h3 {
   color: #fff;
@@ -1114,6 +1116,38 @@ font-size: 3.5rem;
   right: -20px;
   width: 15%;
 }
+
+.services-wrapper .icon-wrapper .services-icon-big {
+  width: 50%;
+  top:-33px;
+}
+
+.services-wrapper .icon-wrapper .services-icon-small {
+  width: 30%;
+  height: 32px;
+  top: 12%;
+  left: 25vh;
+}
+
+.service-card .drive-your-business-text {
+  font-size: calc(1.3rem + 2vw);
+}
+
+.card:hover .overlay {
+  height: 10rem;
+}
+.card:hover .card-text {
+  bottom: 50px !important;
+}
+
+.card:hover .subtext-wrapper {
+  bottom: -2.5rem;
+}
+
+.card:hover .subtext-wrapper .card-sub-text {
+  margin-bottom: .1rem;
+}
+
 }
 
 @media screen and (min-width: 576px) {
