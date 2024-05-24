@@ -1006,7 +1006,7 @@ font-size: 3.5rem;
   .navbar .navbar-brand {
     width: 3.4rem;
     height: 2.6rem;
-}
+  }
   .navbar-toggler-icon {font-size: 1rem;}
   .navbar-nav .nav-link{font-size: 14px;}
   .navbar-nav .nav-link.active,
@@ -1061,25 +1061,60 @@ font-size: 3.5rem;
   .partner-text-wrapper p {
     font-size: 1rem;
     line-height: 1.7;
-}
+  }
 
-.channel-partner-image {
-  width: 550px;
-  right: -1rem;
-  top: -7.5rem;
-  display: block;
-  position: initial;
-}
-.product-partner-image {
-  width: 450px;
-  top: -4rem;
-  display: block;
-  position: initial;
-}
-.footer-navbar.social-block li {
-  margin: 10px 0 0;
-  padding: 10px !important;
-}
+  .channel-partner-image {
+    width: 550px;
+    right: -1rem;
+    top: -7.5rem;
+    display: block;
+    position: initial;
+  }
+  .product-partner-image {
+    width: 450px;
+    top: -4rem;
+    display: block;
+    position: initial;
+  }
+  .footer-navbar.social-block li {
+    margin: 10px 0 0;
+    padding: 10px !important;
+  }
+  .services-details-header-wrapper,
+  .services-details-container .services-details-wrapper,
+  .services-why-us-wrapper {width: 100%;}
+
+  .services-details-container .services-details-wrapper h1 {font-size: 60px;}
+
+  .services-details-container .services-details-wrapper h2,
+  .get-quotes-wrapper h2 {font-size: 32px;}
+
+  .services-details-header-wrapper h3 {font-size: 30px;}
+
+  .services-details-header-wrapper p,
+  .services-details-container .services-details-wrapper p,
+  .services-why-us-wrapper ul li p,
+  .services-why-us-wrapper p,
+  .get-quotes-wrapper p {
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .services-why-us-wrapper h1 {font-size: 46px;}
+
+  .services-why-us-wrapper ul li h4 {
+    font-size: 26px;
+    margin-top: 1rem;
+  }
+
+  .services-why-us-wrapper ul li p {padding: 1.2rem 0;}
+
+  .get-quotes-wrapper {margin: 5rem 0; padding: 30px;}
+
+  .btn-wrapper .btn-lets-talk {
+    min-width: 140px;
+    height: 45px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1105,15 +1140,15 @@ font-size: 3.5rem;
 
   .service-card.card:hover .subtext-wrapper {font-size: .8rem;}
 
-  .get-quotes-wrapper {padding: 2rem 1rem;}
+  /* .get-quotes-wrapper {padding: 2rem 1rem;} */
 
   .btn-wrapper .btn-lets-talk {
     min-width: 120px;
     height: 40px;
   }
-  .get-quotes-wrapper h2 {font-size:1.5rem;}
+  /* .get-quotes-wrapper h2 {font-size:1.5rem;}
 
-  .get-quotes-wrapper p {font-size: 1rem;}
+  .get-quotes-wrapper p {font-size: 1rem;} */
 
   .container .section-block {padding:3rem 1rem !important;}
 
@@ -1159,6 +1194,38 @@ font-size: 3.5rem;
 
   .card:hover .subtext-wrapper .card-sub-text {
     margin-bottom: .1rem;
+  }
+
+  .services-details-container .services-details-wrapper h1 {font-size: 32px;}
+
+  .services-details-container .services-details-wrapper h2,
+  .get-quotes-wrapper h2 {font-size: 1.2rem; margin-bottom: 0;}
+
+  .services-details-header-wrapper h3 {font-size: 24px;}
+
+  .services-details-header-wrapper p,
+  .services-details-container .services-details-wrapper p,
+  .services-why-us-wrapper ul li p,
+  .services-why-us-wrapper p,
+  .get-quotes-wrapper p {
+    font-size: 14px;
+  }
+
+  .services-why-us-wrapper h1 {font-size: 36px;}
+
+  .services-why-us-wrapper ul li h4 {
+    font-size: 26px;
+    margin-top: 1rem;
+  }
+
+  .services-why-us-wrapper ul li p {padding: 1.2rem 0;}
+
+  .get-quotes-wrapper {margin: 3rem 0; padding: 20px;}
+
+  .btn-wrapper .btn-lets-talk {
+    min-width: 80px;
+    height: 35px;
+    font-size: 14px;
   }
 
   .bd-footer p.subtext {font-size: 14px;}
