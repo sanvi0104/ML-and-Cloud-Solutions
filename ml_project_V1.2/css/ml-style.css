@@ -156,7 +156,7 @@ h1 {
     padding-bottom: 0;
   }
 
-  .navbar .navbar-brand {width: 4.4rem; height: 3.6rem;}
+.navbar .navbar-brand {width: 4.4rem; height: 3.6rem;}
 
 .navbar .navbar-brand img {width: 100%; height: 100%}
 
@@ -167,11 +167,13 @@ h1 {
     color: #ed2b24 !important;
     background: url(../images/a_hover.png) no-repeat 20px 30px;
   }
+
+  .footer-navbar > li > a:hover {background: url(../images/a_hover.png) no-repeat 0 30px;}
+
   .navbar-nav {
     display: block;
-  margin: 0 auto;
-  position: relative;
-
+    margin: 0 auto;
+    position: relative;
   }
 
 
@@ -179,16 +181,20 @@ h1 {
   .footer-navbar > li > a {
     color: #fff;
     display: block;
-    padding: 10px 20px !important;
+    padding: 0 20px 10px !important;
     text-align: left;
     text-decoration: none;
     padding-bottom: 1px;
   }
+  
+  .footer-navbar > li {padding: 10px 0 !important;}
+
+  .footer-navbar > li > a {padding: 0 0 10px !important;}
 
   .footer-navbar > li > a,
   .footer-navbar > li { color: #D0DAF5}
 
-  .footer-navbar-title {padding: 0 20px}
+  /* .footer-navbar-title {padding: 0 20px} */
   .footer-navbar.social-block li {
     display: inline-block;
     margin: 10px 20px 0 0;
@@ -806,15 +812,18 @@ padding: 0;
   transition-timing-function:linear!important; 
 }
 
-.about-container {
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .footer-navbar.social-block li {margin: 10px 0 0;}  
+}
 
+@media (min-width: 992px) and (max-width: 1199px) {
+  .footer-navbar.social-block li {margin: 10px 0 0;}
 }
 
 
 @media (max-width: 991px){
   .navbar.sticky-top {padding:10px !important}
-  .navbar-nav > li > a,
-  .nav-link:hover, .footer-navbar > li > a:hover {padding: 10px 0 !important;}
+  .navbar-nav > li > a {padding: 10px 0 !important;}
   .navbar .navbar-brand {
     width: 3.4rem;
     height: 2.6rem;
@@ -847,6 +856,11 @@ padding: 0;
   #featureContainer .card .card-text {font-size: 1rem;}
 
   #featureContainer .card .subtext-wrapper {font-size: .8rem;}
+
+  .footer-navbar.social-block li {
+    margin: 10px 0 0;
+    padding: 10px !important;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -867,5 +881,28 @@ padding: 0;
   .service-card.card:hover .subtext-wrapper {font-size: .8rem;}
   #featureCarousel .card:hover .subtext-wrapper {bottom: -3rem;}
   .container .project-container {margin: 20px 0 !important;}
+
+  .bd-footer p.subtext {font-size: 14px;}
+
+  .footer-navbar > li {padding: 0 !important; font-size: 14px;}
+  .footer-navbar > li > a,
+  .footer-navbar > li > a:hover {padding: 6px 0 !important;}
+
+  .footer-navbar > li > a:hover {background-position: 0 30px;}
+
+  .footer-navbar-title {
+    display: flex; 
+    justify-content: center;
+  }
+
+  .bd-footer ul.footer-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .bd-footer ul.footer-navbar.social-block {flex-direction: row;}
 }
 

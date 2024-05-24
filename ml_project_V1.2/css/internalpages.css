@@ -73,6 +73,8 @@ p, .subtext {color: #d0daf5;}
     color: #ed2b24 !important;
     background: url(../images/a_hover.png) no-repeat 20px 30px;
   }
+
+  .footer-navbar > li > a:hover {background: url(../images/a_hover.png) no-repeat 0 30px;}
   .navbar-nav {
     display: block;
   margin: 0 auto;
@@ -89,16 +91,20 @@ p, .subtext {color: #d0daf5;}
   .footer-navbar > li > a {
     color: #fff;
     display: block;
-    padding: 10px 20px !important;
-    text-align: left;
+    padding: 0 20px 10px !important;
+    /* text-align: left; */
     text-decoration: none;
     padding-bottom: 1px;
   }
 
+  .footer-navbar > li {padding: 10px 0 !important;}
+
+  .footer-navbar > li > a {padding: 0 0 10px !important;}
+
   .footer-navbar > li > a,
   .footer-navbar > li { color: #D0DAF5}
 
-  .footer-navbar-title {padding: 0 20px}
+  /* .footer-navbar-title {padding: 0 20px} */
 
   .footer-navbar.social-block li {
     display: inline-block;
@@ -935,6 +941,8 @@ font-size: 3.5rem;
     bottom: 2%;
     right: -40px;
   }
+
+  .footer-navbar.social-block li {margin: 10px 0 0;}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -982,6 +990,7 @@ font-size: 3.5rem;
   right: -20px;
   width: 15%;
 }
+.footer-navbar.social-block li {margin: 10px 0 0;}
 }
 
 @media (min-width: 1024px) {
@@ -993,7 +1002,7 @@ font-size: 3.5rem;
 @media (max-width: 991px){
   .navbar.sticky-top {padding:10px !important}
   .navbar-nav > li > a,
-  .nav-link:hover, .footer-navbar > li > a:hover {padding: 10px 0 !important;}
+  .nav-link:hover, .footer-navbar > li > a:hover {padding: 6px 0 !important;}
   .navbar .navbar-brand {
     width: 3.4rem;
     height: 2.6rem;
@@ -1067,6 +1076,10 @@ font-size: 3.5rem;
   display: block;
   position: initial;
 }
+.footer-navbar.social-block li {
+  margin: 10px 0 0;
+  padding: 10px !important;
+}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1097,57 +1110,79 @@ font-size: 3.5rem;
   .btn-wrapper .btn-lets-talk {
     min-width: 120px;
     height: 40px;
-}
-.get-quotes-wrapper h2 {font-size:1.5rem;}
+  }
+  .get-quotes-wrapper h2 {font-size:1.5rem;}
 
-.get-quotes-wrapper p {font-size: 1rem;}
+  .get-quotes-wrapper p {font-size: 1rem;}
 
-.container .section-block {padding:3rem 1rem !important;}
+  .container .section-block {padding:3rem 1rem !important;}
 
-.banner-text-wrapper .text-container {top: 2%; left: 5px;}
+  .banner-text-wrapper .text-container {top: 2%; left: 5px;}
 
-.banner-text-wrapper .text-container p {font-size: 2.8vw;}
+  .banner-text-wrapper .text-container p {font-size: 2.8vw;}
 
-.banner-text-wrapper .text-container .drive-your-business-text {font-size: 3.2vw;}
+  .banner-text-wrapper .text-container .drive-your-business-text {font-size: 3.2vw;}
 
-.banner-text-wrapper .service-scroll-text {
-  font-size: 1.3vw;
-  bottom: -6%;
-  right: -20px;
-  width: 15%;
-}
+  .banner-text-wrapper .service-scroll-text {
+    font-size: 1.3vw;
+    bottom: -6%;
+    right: -20px;
+    width: 15%;
+  }
 
-.services-wrapper .icon-wrapper .services-icon-big {
-  width: 50%;
-  top:-33px;
-}
+  .services-wrapper .icon-wrapper .services-icon-big {
+    width: 50%;
+    top:-33px;
+  }
 
-.services-wrapper .icon-wrapper .services-icon-small {
-  width: 30%;
-  height: 32px;
-  top: 12%;
-  left: 25vh;
-}
+  .services-wrapper .icon-wrapper .services-icon-small {
+    width: 30%;
+    height: 32px;
+    top: 12%;
+    left: 25vh;
+  }
 
-.service-card .drive-your-business-text {
-  font-size: calc(1.3rem + 2vw);
-}
+  .service-card .drive-your-business-text {
+    font-size: calc(1.3rem + 2vw);
+  }
 
-.card:hover .overlay {
-  height: 10rem;
-}
-.card:hover .card-text {
-  bottom: 50px !important;
-}
+  .card:hover .overlay {
+    height: 10rem;
+  }
+  .card:hover .card-text {
+    bottom: 50px !important;
+  }
 
-.card:hover .subtext-wrapper {
-  bottom: -2.5rem;
-}
+  .card:hover .subtext-wrapper {
+    bottom: -2.5rem;
+  }
 
-.card:hover .subtext-wrapper .card-sub-text {
-  margin-bottom: .1rem;
-}
+  .card:hover .subtext-wrapper .card-sub-text {
+    margin-bottom: .1rem;
+  }
 
+  .bd-footer p.subtext {font-size: 14px;}
+
+  .footer-navbar > li {padding: 0 !important; font-size: 14px;}
+  .footer-navbar > li > a,
+  .footer-navbar > li > a:hover {padding: 6px 0 !important;}
+
+  .footer-navbar > li > a:hover {background-position: 0 30px;}
+
+  .footer-navbar-title {
+    display: flex; 
+    justify-content: center;
+  }
+
+  .bd-footer ul.footer-navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .bd-footer ul.footer-navbar.social-block {flex-direction: row;}
 }
 
 @media screen and (min-width: 576px) {
