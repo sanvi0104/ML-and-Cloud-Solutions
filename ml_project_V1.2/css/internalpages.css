@@ -319,10 +319,10 @@ p, .subtext {color: #d0daf5;}
 
 .product-partner-image {
     background: url("../images/partner_program/product-partner-image.png") no-repeat;
-    width: 7300px;
+    width: 712px;
     height: 610px;
     left: 1rem;
-    top: -9rem;
+    top: -8rem;
     background-size: contain;
 }
 
@@ -881,10 +881,10 @@ font-size: 3.5rem;
 
 .aboutus-block .innovation-image {
   background: url("../images/about_us/innovation-bg-image.png") no-repeat;
-  width: 746px;
-  height: 759px;
-  top: -16rem;
-  left: -5rem;
+  width: 556px;
+  height: 519px;
+  top: -6rem;
+  left: 5rem;
 }
 
 .aboutus-block .customer-focus-image {
@@ -941,6 +941,18 @@ font-size: 3.5rem;
     bottom: 2%;
     right: -40px;
   }
+  .aboutus-block .integrity-image {
+    width: 515px;
+    height: 650px;
+    top: -13rem;
+    left: .5rem;
+  }
+
+  .aboutus-block .innovation-image {left: 2rem;}
+
+
+
+  .aboutus-text-wrapper {padding: 0 3rem;}
 
   .footer-navbar.social-block li {margin: 10px 0 0;}
 }
@@ -966,31 +978,46 @@ font-size: 3.5rem;
   .partner-text-wrapper p {
     font-size: 1rem;
     line-height: 1.7;
-}
+  }
 
-.channel-partner-image {
-  width: 550px;
-  right: -1rem;
-  top: -7.5rem;
-}
-.product-partner-image {
-  width: 450px;
-  top: -4rem;
-}
+  .channel-partner-image {
+    width: 550px;
+    right: -1rem;
+    top: -7.5rem;
+  }
+  .product-partner-image {
+    width: 450px;
+    top: -4rem;
+  }
 
-.banner-text-wrapper .text-container {top: 6%;}
+  .aboutus-container .aboutus-block {padding: 3.5rem 0;}
 
-.banner-text-wrapper .text-container p {font-size: .8rem;}
+  .aboutus-text-wrapper {padding: 0 2.5rem;}
 
-.banner-text-wrapper .text-container .drive-your-business-text {font-size: 2.2rem;}
+  .aboutus-block .integrity-image {
+    width: 475px;
+    height: 600px;
+    top: -9rem;
+    left: -2.7rem;
+  }
 
-.banner-text-wrapper .service-scroll-text {
-  font-size: .7rem;
-  bottom: 0;
-  right: -20px;
-  width: 15%;
-}
-.footer-navbar.social-block li {margin: 10px 0 0;}
+  .aboutus-block .innovation-image {left: -1rem;}
+
+  .aboutus-block .customer-focus-image {width: 790px;}
+
+  .banner-text-wrapper .text-container {top: 6%;}
+
+  .banner-text-wrapper .text-container p {font-size: .8rem;}
+
+  .banner-text-wrapper .text-container .drive-your-business-text {font-size: 2.2rem;}
+
+  .banner-text-wrapper .service-scroll-text {
+    font-size: .7rem;
+    bottom: 0;
+    right: -20px;
+    width: 15%;
+  }
+  .footer-navbar.social-block li {margin: 10px 0 0;}
 }
 
 @media (min-width: 1024px) {
@@ -1045,13 +1072,14 @@ font-size: 3.5rem;
 
   .partner-banner-image {width: 100%;}
 
-  .partner-container .partner-block {padding: 4.5rem 0;}
+  .partner-container .partner-block, .aboutus-container .aboutus-block {padding: 4.5rem 0;}
 
-  .partner-text-wrapper, .partner-image-wrapper {
+  .partner-text-wrapper, .partner-image-wrapper, .aboutus-text-wrapper, .aboutus-image-wrapper {
     padding: 0 3rem;
   }
 
-  .partner-image-wrapper {
+  .partner-image-wrapper,
+  .aboutus-image-wrapper {
     display: flex;
     justify-content: center;
   }
@@ -1117,6 +1145,23 @@ font-size: 3.5rem;
     min-width: 140px;
     height: 45px;
   }
+
+  .aboutus-container .aboutus-block .aboutus-image {position: initial;}
+
+  .aboutus-block .integrity-image {
+    background: url("../images/about_us/integrity-bg-image-mobile.png") no-repeat;
+    width: 450px;
+    height: 470px;
+  }
+
+  .aboutus-block .innovation-image {
+    width: 450px;
+    height: 500px;
+  }
+  .aboutus-block .customer-focus-image {
+    width: 450px;
+    height: 290px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1142,15 +1187,10 @@ font-size: 3.5rem;
 
   .service-card.card:hover .subtext-wrapper {font-size: .8rem;}
 
-  /* .get-quotes-wrapper {padding: 2rem 1rem;} */
-
   .btn-wrapper .btn-lets-talk {
     min-width: 120px;
     height: 40px;
   }
-  /* .get-quotes-wrapper h2 {font-size:1.5rem;}
-
-  .get-quotes-wrapper p {font-size: 1rem;} */
 
   .container .section-block {padding:3rem 1rem !important;}
 
@@ -1230,20 +1270,20 @@ font-size: 3.5rem;
     font-size: 14px;
   }
 
-  .partner-container .partner-block {
+  .partner-container .partner-block,
+  .aboutus-container .aboutus-block {
     padding: 3rem 0;
   }
 
-  .partner-text-wrapper {padding: 0 1.5rem;}
+  .partner-text-wrapper, .aboutus-text-wrapper {padding: 0 1.5rem;}
 
-  .partner-block h3 {font-size: 26px; margin-bottom: 1rem;}
+  .partner-block h3, .aboutus-block h3 {font-size: 26px; margin-bottom: 1rem;}
 
-  .partner-text-wrapper p {
+  .partner-text-wrapper p, .aboutus-text-wrapper p {
     font-size: 14px;
     line-height: 1.5;
     text-align: left;
   }
-
 
   .bd-footer p.subtext {font-size: 14px;}
 
@@ -1280,7 +1320,7 @@ font-size: 3.5rem;
   }
 }
 
-@media (min-width: 578px) and (max-width: 767px) {
+@media (min-width: 576px) and (max-width: 767px) {
   .partner-block .channel-partner-image {
     width: 350px;
     height: 250px;
@@ -1289,9 +1329,21 @@ font-size: 3.5rem;
     width: 350px;
     height: 330px;
   }
+  .aboutus-block .integrity-image {
+    width: 370px;
+    height: 370px;
+  }
+  .aboutus-block .innovation-image {
+    width: 370px;
+    height: 400px;
+  }
+  .aboutus-block .customer-focus-image {
+    width: 370px;
+    height: 240px;
+  }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .partner-block .channel-partner-image {
     width: 65vw;
     height: 50vw;
@@ -1302,6 +1354,19 @@ font-size: 3.5rem;
   }
   .partner-image-wrapper {padding: 0 1rem;}
 
+  .aboutus-block .integrity-image {
+    width: 45vw;
+    height: 48vw;
+  }
+
+  .aboutus-block .innovation-image {
+    width: 45vw;
+    height: 55vw;
+  }
+  .aboutus-block .customer-focus-image {
+    width: 45vw;
+    height: 35vw;
+  }
 }
 
 
