@@ -1070,7 +1070,7 @@ font-size: 3.5rem;
 
   .banner-text-wrapper .lead {font-size: 1rem;}
 
-  .partner-banner-image {width: 100%;}
+  .partner-banner-image {width: 100%;height: 410px;}
 
   .partner-container .partner-block, .aboutus-container .aboutus-block {padding: 4.5rem 0;}
 
@@ -1270,6 +1270,8 @@ font-size: 3.5rem;
     font-size: 14px;
   }
 
+  .banner-text-wrapper .first-text {padding-top: 2rem;}
+
   .partner-container .partner-block,
   .aboutus-container .aboutus-block {
     padding: 3rem 0;
@@ -1344,6 +1346,7 @@ font-size: 3.5rem;
 }
 
 @media screen and (max-width: 575px) {
+  .partner-banner-image {height: 87vw;}
   .partner-block .channel-partner-image {
     width: 65vw;
     height: 50vw;
