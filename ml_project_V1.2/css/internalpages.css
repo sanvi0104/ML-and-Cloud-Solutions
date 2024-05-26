@@ -950,7 +950,21 @@ font-size: 3.5rem;
 
   .aboutus-block .innovation-image {left: 2rem;}
 
+  .aboutus-block .company-overview-image {width: 555px; height: 547px;}
 
+  .aboutus-block .our-values-image {
+    width: 842px;
+    height: 550px;
+    top: -5.1rem;
+    left: -20rem;
+  }
+
+  .client-container .kathreftis-client,
+  .client-container .unotech-client {
+    width: 520px;
+    height: 210px;
+    background-size: contain;
+  }
 
   .aboutus-text-wrapper {padding: 0 3rem;}
 
@@ -1005,6 +1019,34 @@ font-size: 3.5rem;
 
   .aboutus-block .customer-focus-image {width: 790px;}
 
+  .aboutus-block .company-overview-image {
+    width: 464px;
+    height: 460px;
+    top: 5rem;
+    left: -2rem;
+  }
+
+  .aboutus-block .methodology-image {
+    width: 500px;
+    height: 500px;
+    top: 90px;
+    left: 0;
+  }
+
+  .aboutus-block .our-values-image {
+    width: 750px;
+    height: 500px;
+    top: -2.2rem;
+    left: -19.9rem;
+  }
+  
+  .client-container .kathreftis-client,
+  .client-container .unotech-client {
+    width: 430px;
+    height: 185px;
+    background-size: contain;
+  }
+  
   .banner-text-wrapper .text-container {top: 6%;}
 
   .banner-text-wrapper .text-container p {font-size: .8rem;}
@@ -1162,6 +1204,31 @@ font-size: 3.5rem;
     width: 450px;
     height: 290px;
   }
+
+  .aboutus-block .company-overview-image {
+    width: 464px;
+    height: 460px;
+    top: 5rem;
+    left: -2rem;
+  }
+
+  .aboutus-block .methodology-image {
+    width: 500px;
+    height: 500px;
+    top: 90px;
+    left: 0;
+  }
+
+  .aboutus-block .our-values-image {
+    width: 540px;
+    height: 360px;
+  }
+  .client-container .kathreftis-client,
+  .client-container .unotech-client {
+    width: 310px;
+    height: 125px;
+    background-size: contain;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1279,13 +1346,23 @@ font-size: 3.5rem;
 
   .partner-text-wrapper, .aboutus-text-wrapper {padding: 0 1.5rem;}
 
-  .partner-block h3, .aboutus-block h3 {font-size: 26px; margin-bottom: 1rem;}
+  .partner-block h3, .aboutus-block h3, .aboutus-block h3 {font-size: 26px; margin-bottom: 1rem;}
 
   .partner-text-wrapper p, .aboutus-text-wrapper p {
     font-size: 14px;
     line-height: 1.5;
     text-align: left;
   }
+
+  .client-container p {
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 10px 0;
+  }
+
+  .aboutus-service-block > div span {font-size: 26px;}
+
+  .aboutus-service-block > div h3 {font-size: 20px;}
 
   .contactus-location-container {margin-top: 0}
 
@@ -1364,6 +1441,29 @@ font-size: 3.5rem;
     width: 370px;
     height: 240px;
   }
+  .aboutus-block .company-overview-image {
+    width: 350px;
+    height: 350px;
+  }
+  .aboutus-block .methodology-image {
+    width: 290px;
+    height: 370px;
+  }
+  .aboutus-block .our-values-image {
+    width: 370px;
+    height: 250px;
+  }
+  .client-container .kathreftis-client {
+    width: 460px;
+    height: 210px;
+    background-size: contain;
+  }
+  .client-container .unotech-client {
+    width: 460px;
+    height: 210px;
+    background-size: contain;
+  }
+
 }
 
 @media screen and (max-width: 575px) {
@@ -1391,6 +1491,30 @@ font-size: 3.5rem;
     width: 45vw;
     height: 35vw;
   }
+  .aboutus-block .company-overview-image {
+    width: 50vw;
+    height: 45vw;
+  }
+  .aboutus-block .methodology-image {
+    width: 50vw;
+    height: 65vw;
+  }
+  .aboutus-block .our-values-image {
+    width: 50vw;
+    height: 35vw;
+  }
+  .client-container .kathreftis-client {
+    width: 80vw;
+    height: 33vw;
+    background-size: contain;
+    margin-bottom: 20px;
+  }
+  .client-container .unotech-client {
+    width: 80vw;
+    height: 33vw;
+    background-size: contain;
+  }
+
 }
 
 
