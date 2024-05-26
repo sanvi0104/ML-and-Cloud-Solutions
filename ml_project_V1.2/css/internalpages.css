@@ -1287,6 +1287,27 @@ font-size: 3.5rem;
     text-align: left;
   }
 
+  .contactus-location-container {margin-top: 0}
+
+  .contactus-location-container h1 {font-size: 32px; margin-bottom: 20px;}
+
+  .contactus-location-container .swiper-wrapper .card .card-title {font-size: 20px;}
+
+  .contactus-location-container .card .card-body a {font-size: 14px;}
+
+  .contactus-location-container p {font-size: 14px;}
+
+  .contactus-location-container .swiper-wrapper .card {margin: 0 18%;}
+
+  .contactus-details-wrapper img {width: 80px; height: 50px;}
+
+  .contactus-details-wrapper h1 {font-size: 24px;}
+
+  .contactus-details-header-wrapper p,
+  .contact-form-container label, 
+  .contact-form-container input,
+  .contact-form-container select {font-size: 14px;}
+
   .bd-footer p.subtext {font-size: 14px;}
 
   .footer-navbar > li {padding: 0 !important; font-size: 14px;}
