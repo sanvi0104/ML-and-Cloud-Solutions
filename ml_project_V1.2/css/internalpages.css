@@ -536,11 +536,12 @@ margin-bottom: .3rem;
 
 .banner-text-wrapper .service-scroll-text,
 .banner-text-wrapper .aboutus-scroll-text,
-.banner-text-wrapper .ourvalues-scroll-text {
+.banner-text-wrapper .ourvalues-scroll-text,
+.banner-text-wrapper .contactus-scroll-text {
   font-family: "Manrope", sans-serif;
   position: absolute;
   right: 0;
-  bottom: 2%;
+  bottom: 4%;
   display: inline-block;
   font-size: 14px;
   text-transform: uppercase;
@@ -964,6 +965,13 @@ font-size: 3.5rem;
 /* Our Values CSS Ends */
 
 /* Contact Us CSS Starts */
+.contactus-banner-image {
+  background:url("../images/contact_us/contactus-banner-image.png") no-repeat;
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  aspect-ratio: 1/.52;
+}
 .contactus-container hr {
   color: #1c1c21;
   opacity: 1;
