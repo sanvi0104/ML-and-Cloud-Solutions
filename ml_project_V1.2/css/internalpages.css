@@ -489,6 +489,24 @@ p, .subtext {color: #d0daf5;}
   aspect-ratio: 1/0.58;
 }
 
+.banner-text-wrapper .outsourcing-banner-image {
+  position: relative;
+  background: url("../images/services/outsourcing-banner-image.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/0.58;
+}
+
+.banner-text-wrapper .custom-software-banner-image {
+  position: relative;
+  background: url("../images/services/custom-software-banner-image.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/0.58;
+}
+
 .banner-text-wrapper .text-container.services-innerpage-container {
   top: 13%;
   left: 15%;
