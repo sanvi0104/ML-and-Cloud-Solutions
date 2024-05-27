@@ -1325,7 +1325,7 @@ font-size: 3.5rem;
 
   .banner-text-wrapper .text-container.services-innerpage-container {
     top: 20%;
-    left: 15%;
+    left: 16%;
   }
 
   .banner-text-wrapper .text-container.services-innerpage-container span {
@@ -1344,8 +1344,8 @@ font-size: 3.5rem;
   .banner-text-wrapper .service-scroll-text,
   .banner-text-wrapper .aboutus-scroll-text {
     font-size: 1vw;
-    bottom: -3%;
-    right: -15px;
+    bottom: -1%;
+    right: -17px;
     width: 15%;
   }
 
