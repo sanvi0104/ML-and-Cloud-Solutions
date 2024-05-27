@@ -185,12 +185,25 @@ p, .subtext {color: #d0daf5;}
   margin-bottom: 70px;
 }
 
+.banner-text-wrapper .breadcrumb li a,
+.banner-text-wrapper .breadcrumb-item+.breadcrumb-item::before {
+  color: #fff;
+  font-family: "Archivo", sans-serif;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.banner-text-wrapper .breadcrumb li.active {
+  font-size: 18px;
+  color: #ED2B24;
+  line-height: 26px;
+}
+
 .banner-text-wrapper .drive-your-business-text {
     font-family: 'Archivo', sans-serif;
     font-weight: 600;
     line-height: 130px;
     font-size: 3.9rem;
-    /* width: 70%; */
     text-align: left;
     display: flex;
     justify-content: left;
@@ -201,7 +214,6 @@ p, .subtext {color: #d0daf5;}
 .banner-text-wrapper .lead {
     font-family: 'Inter', sans-serif;
     color: #d0daf5;
-    /* width: 40%; */
     line-height: 1.8;
     font-size: 1.4rem;
     text-align: justify;
@@ -214,12 +226,9 @@ p, .subtext {color: #d0daf5;}
 .banner-text-wrapper .second-text:hover {color: red}
 
 .partner-banner-image {
-  /* position: absolute; */
   background: url(../images/partner_program/partner-banner.png) no-repeat;
   width: 490px;
   height: 490px;
-  /* top: 0;
-  right: 0; */
   background-size: contain;
 }
 
@@ -453,31 +462,21 @@ p, .subtext {color: #d0daf5;}
 /* Partner CSS Starts */
 
 /* Services CSS Starts */
-/* .banner-text-wrapper .service-banner-image { */
-  /* position: relative;  */
-  /* background: url("../images/services/services-banner-image.png") no-repeat; */
-  /* background-size: contain; */
-  /* width: 100%; */
-  /* height: 100vh; */
-  /* top: -11rem; */
-  /* right: 0; */
-  /* background: url("../images/services/services-banner-image.png") no-repeat;
-  /* width: 1260px; */
-  /* height: 632px; */
-  /* top: -11rem; */
-  /* right: 0; */
-/* } */
+.banner-text-wrapper .service-banner-image {
+  position: relative;
+  background: url("../images/services/services-banner-image.png") no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/0.5;
+}
 
 .banner-text-wrapper .text-container {
   display: inline-block;
   margin-bottom: 30px;
   position: absolute;
-  top: 7%;
-  left: 20px;
-  /* display: inline-block;
-  margin-bottom: 30px;
-  position: relative;
-  top: -37rem; */
+  top: 10%;
+  left: 2px;
 }
 
 .banner-text-wrapper .text-container p {
@@ -496,8 +495,8 @@ margin-bottom: .3rem;
 .banner-text-wrapper .service-scroll-text {
   font-family: "Manrope", sans-serif;
   position: absolute;
-  right: -20px;
-  bottom: 4%;
+  right: 0;
+  bottom: 2%;
   display: inline-block;
   font-size: 14px;
   text-transform: uppercase;
@@ -1047,7 +1046,7 @@ font-size: 3.5rem;
     background-size: contain;
   }
   
-  .banner-text-wrapper .text-container {top: 6%;}
+  .banner-text-wrapper .text-container {top: 13%;}
 
   .banner-text-wrapper .text-container p {font-size: .8rem;}
 
@@ -1232,7 +1231,7 @@ font-size: 3.5rem;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-.banner-text-wrapper .text-container {top: 6%;}
+.banner-text-wrapper .text-container {top: 14%;}
 
 .banner-text-wrapper .text-container p {font-size: .8rem;}
 
@@ -1261,18 +1260,23 @@ font-size: 3.5rem;
 
   .container .section-block {padding:3rem 1rem !important;}
 
-  .banner-text-wrapper .text-container {top: 2%; left: 5px;}
+  .banner-text-wrapper .text-container {top: 8.5vh; left: 5px; margin-bottom: 0;}
 
-  .banner-text-wrapper .text-container p {font-size: 2.8vw;}
+  .banner-text-wrapper .breadcrumb li.active,
+  .banner-text-wrapper .breadcrumb li a {font-size: 14px; line-height: 26px;}
+
+  .banner-text-wrapper .text-container p {font-size: 2.5vw;}
 
   .banner-text-wrapper .text-container .drive-your-business-text {font-size: 3.2vw;}
 
   .banner-text-wrapper .service-scroll-text {
     font-size: 1.3vw;
-    bottom: -6%;
-    right: -20px;
+    bottom: -3%;
+    right: -10px;
     width: 15%;
   }
+
+  .banner-text-wrapper {margin-bottom: 30px;}
 
   .services-wrapper .icon-wrapper .services-icon-big {
     width: 50%;
