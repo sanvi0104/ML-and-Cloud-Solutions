@@ -132,13 +132,13 @@ p, .subtext {color: #d0daf5;}
     display: inline-block;
   }
   .footer-navbar .icon-instagram:hover {
-    background: url("../images/icon-instagram-hover.svg") no-repeat;
+    background: url("../images/icon-instagram-red.svg") no-repeat;
   }
   .footer-navbar .icon-twitter:hover {
-    background: url("../images/icon-twitter-hover.svg") no-repeat;
+    background: url("../images/icon-twitter-red.svg") no-repeat;
   }
   .footer-navbar .icon-youtube:hover {
-    background: url("../images/icon-youtube-hover.svg") no-repeat;
+    background: url("../images/icon-youtube-red.svg") no-repeat;
   }
   .footer-navbar.social-block li:hover {fill:#ED2B24;}
   .navbar-nav ul {
@@ -972,6 +972,74 @@ font-size: 3.5rem;
   background-size: contain;
   aspect-ratio: 1/.52;
 }
+
+.banner-text-wrapper .contactus-text-container {
+  width: 60%;
+  top: 33%;
+}
+
+.banner-text-wrapper .subtext-content {
+  margin-top: 1%;
+  display: inline-block;
+}
+
+.banner-text-wrapper .contactus-social-wrapper {
+  border: 1px solid #1c1c21;
+  padding: 10px;
+  position: absolute;
+  top: 120px;
+  right: 0;
+  width: 200px;
+  border-radius: 35px;
+}
+
+.banner-text-wrapper .contactus-social-wrapper .social-insta-block {
+  background: url("../images/icon-instagram.svg") no-repeat center;
+  background-color: #1c1c21;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #1c1c21;
+  display: inline-block;
+  padding: 25px;
+  border-radius: 25px;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+.banner-text-wrapper .contactus-social-wrapper .social-twitter-block {
+  background: url("../images/icon-twitter.svg") no-repeat center;
+  background-color: #1c1c21;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #1c1c21;
+  display: inline-block;
+  padding: 25px;
+  border-radius: 25px;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+.banner-text-wrapper .contactus-social-wrapper .social-youtube-block {
+  background: url("../images/icon-youtube.svg") no-repeat center;
+  background-color: #1c1c21;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #1c1c21;
+  display: inline-block;
+  padding: 25px;
+  border-radius: 25px;
+  vertical-align: middle;
+  margin: 0 2px;
+}
+.banner-text-wrapper .contactus-social-wrapper .social-insta-block:hover {
+  background: url("../images/icon-instagram-red.svg") no-repeat center;
+}
+.banner-text-wrapper .contactus-social-wrapper .social-twitter-block:hover {
+  background: url("../images/icon-twitter-red.svg") no-repeat center;
+}
+.banner-text-wrapper .contactus-social-wrapper .social-youtube-block:hover {
+  background: url("../images/icon-youtube-red.svg") no-repeat center;
+}
+
+
 .contactus-container hr {
   color: #1c1c21;
   opacity: 1;
@@ -1011,7 +1079,8 @@ font-size: 3.5rem;
 
   .banner-text-wrapper .service-scroll-text,
   .banner-text-wrapper .aboutus-scroll-text,
-  .banner-text-wrapper .ourvalues-scroll-text {
+  .banner-text-wrapper .ourvalues-scroll-text,
+  .banner-text-wrapper .contactus-scroll-text {
     font-size:.8rem;
     bottom: 4%;
     right: -40px;
@@ -1044,6 +1113,19 @@ font-size: 3.5rem;
   }
 
   .aboutus-text-wrapper {padding: 0 3rem;}
+
+  .banner-text-wrapper .contactus-social-wrapper {
+    padding: 5px;
+    top: 108px;
+    right: -12px;
+    width: 195px;
+  }
+  .banner-text-wrapper .contactus-social-wrapper .social-insta-block,
+  .banner-text-wrapper .contactus-social-wrapper .social-twitter-block,
+  .banner-text-wrapper .contactus-social-wrapper .social-youtube-block {
+    padding: 25px;
+    margin: 0 2px;
+  }
 
   .footer-navbar.social-block li {margin: 10px 0 0;}
 }
@@ -1128,13 +1210,19 @@ font-size: 3.5rem;
   
   .banner-text-wrapper .text-container {top: 13%;}
 
-  .banner-text-wrapper .text-container p {font-size: .8rem;}
+  .banner-text-wrapper .contactus-text-container {top: 32%;}
+
+
+
+  .banner-text-wrapper .text-container p,
+  .banner-text-wrapper .contactus-text-container .subtext-content {font-size: .8rem;}
 
   .banner-text-wrapper .text-container .drive-your-business-text {font-size: 2.65rem;}
 
   .banner-text-wrapper .service-scroll-text,
   .banner-text-wrapper .aboutus-scroll-text,
-  .banner-text-wrapper .ourvalues-scroll-text {
+  .banner-text-wrapper .ourvalues-scroll-text,
+  .banner-text-wrapper .contactus-scroll-text {
     font-size: .7rem;
     bottom: 0;
     right: -20px;
@@ -1147,6 +1235,19 @@ font-size: 3.5rem;
     right: -2%;
     bottom: 20px;
   }
+
+  .banner-text-wrapper .contactus-social-wrapper {
+    padding: 5px;
+    top: 98px;
+    right: -12px;
+    width: 165px;
+}
+.banner-text-wrapper .contactus-social-wrapper .social-insta-block,
+.banner-text-wrapper .contactus-social-wrapper .social-twitter-block,
+.banner-text-wrapper .contactus-social-wrapper .social-youtube-block {
+  padding: 20px;
+  margin: 0 2px;
+}
 
   .footer-navbar.social-block li {margin: 10px 0 0;}
 }
@@ -1318,6 +1419,8 @@ font-size: 3.5rem;
     height: 125px;
     background-size: contain;
   }
+
+  .banner-text-wrapper .contactus-text-container .subtext-content {display: none;}
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -1329,12 +1432,15 @@ font-size: 3.5rem;
 
 .banner-text-wrapper .service-scroll-text,
 .banner-text-wrapper .aboutus-scroll-text,
-.banner-text-wrapper .ourvalues-scroll-text {
+.banner-text-wrapper .ourvalues-scroll-text,
+.banner-text-wrapper .contactus-scroll-text {
   font-size: .6rem;
   bottom: -1%;
   right: -20px;
   width: 15%;
 }
+
+.banner-text-wrapper .contactus-text-container {top: 40%;}
 
 .banner-text-wrapper .aboutus-scroll-text {
   bottom: 2%;
@@ -1354,6 +1460,18 @@ font-size: 3.5rem;
 
 .banner-text-wrapper .text-container.services-innerpage-container span {margin-top: 0;}
 
+.banner-text-wrapper .contactus-social-wrapper {
+    padding: 5px;
+    top: 80px;
+    right: -12px;
+    width: 125px;
+}
+.banner-text-wrapper .contactus-social-wrapper .social-insta-block,
+.banner-text-wrapper .contactus-social-wrapper .social-twitter-block,
+.banner-text-wrapper .contactus-social-wrapper .social-youtube-block {
+  padding: 15px;
+  margin: 0 1px;
+}
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
@@ -1401,7 +1519,8 @@ font-size: 3.5rem;
 
   .banner-text-wrapper .service-scroll-text,
   .banner-text-wrapper .aboutus-scroll-text,
-  .banner-text-wrapper .ourvalues-scroll-text {
+  .banner-text-wrapper .ourvalues-scroll-text,
+  .banner-text-wrapper .contactus-scroll-text {
     font-size: 1vw;
     bottom: -1%;
     right: -17px;
@@ -1615,6 +1734,26 @@ font-size: 3.5rem;
   }
   .banner-text-wrapper .text-container.services-innerpage-container {top: 16%;}
 
+  .banner-text-wrapper .contactus-text-container p {font-size: 16px;}
+
+  .banner-text-wrapper .contactus-text-container h2 {font-size: 24px;}
+
+  .banner-text-wrapper .contactus-text-container {top: 40%;}
+
+  .banner-text-wrapper .contactus-social-wrapper {
+    padding: 2px;
+    top: 70px;
+    right: -9px;
+    width: 89px;
+  }
+  .banner-text-wrapper .contactus-social-wrapper .social-insta-block,
+  .banner-text-wrapper .contactus-social-wrapper .social-twitter-block,
+  .banner-text-wrapper .contactus-social-wrapper .social-youtube-block {
+    background-color: transparent;
+    border: none;
+    padding: 11px;
+    margin: 0 0;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -1677,7 +1816,21 @@ font-size: 3.5rem;
     height: 33vw;
     background-size: contain;
   }
-
+  .banner-text-wrapper .contactus-social-wrapper {display: none;}
 }
+
+@media (min-height: 481px) and (max-width: 575px) {
+  .banner-text-wrapper .contactus-text-container {
+    top: 22.5vw;
+  }
+}
+
+@media (min-height: 320px) and (max-width: 480px) {
+  .banner-text-wrapper .contactus-text-container {
+    top: 46%;
+  }
+}
+
+
 
 

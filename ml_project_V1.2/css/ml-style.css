@@ -221,13 +221,13 @@ h1 {
     display: inline-block;
   }
   .footer-navbar .icon-instagram:hover {
-    background: url("../images/icon-instagram-hover.svg") no-repeat;
+    background: url("../images/icon-instagram-red.svg") no-repeat;
   }
   .footer-navbar .icon-twitter:hover {
-    background: url("../images/icon-twitter-hover.svg") no-repeat;
+    background: url("../images/icon-twitter-red.svg") no-repeat;
   }
   .footer-navbar .icon-youtube:hover {
-    background: url("../images/icon-youtube-hover.svg") no-repeat;
+    background: url("../images/icon-youtube-red.svg") no-repeat;
   }
   .footer-navbar.social-block li:hover {fill:#ED2B24;}
   .navbar-nav ul {
