@@ -1273,6 +1273,10 @@ font-size: 3.5rem;
     background-position: 0 30px;
   }
 
+  .navbar-collapse .navbar-nav {
+    margin-bottom: 20px;
+  }
+
   .bd-footer {padding: 0}
 
   #featureContainer .carousel-item {
