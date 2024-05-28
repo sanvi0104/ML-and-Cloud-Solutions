@@ -69,6 +69,7 @@ p, .subtext {color: #d0daf5;}
   .navbar-nav .nav-link.active,
   .navbar-nav .nav-link.show,
   .nav-link:hover,
+  .nav-link:focus,
   .footer-navbar > li > a:hover,
   .dropdown-item:focus, .dropdown-item:hover {
     color: #ed2b24 !important;
