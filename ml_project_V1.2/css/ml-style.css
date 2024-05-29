@@ -271,6 +271,10 @@ h1 {
     color: #fff;
   }
 
+  .navbar-nav li.dropdown a::after {
+    content: ""
+  }
+
   .home-banner.drive-your-business-text {
     /* -webkit-text-stroke-width: 1px;
     color: #000 !important;
@@ -294,7 +298,7 @@ h1 {
   -webkit-text-fill-color: transparent;
   background-size: 200% 100%;
   background-position: 100%;
-  transition: background-position 500ms ease;
+  transition: background-position 800ms ease;
   }
   .home-banner.drive-your-business-text:hover {
     /* -webkit-text-fill-color: #fff; */
@@ -303,6 +307,12 @@ h1 {
   }
 
 .services-wrapper {position: relative; display: inline-flex;}
+
+.services-wrapper h2 {
+  font-family: "Inter", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+}
 .services-wrapper .icon-wrapper .services-icon-big {
   background: url("../images/services/services-home-icon-big.png") no-repeat;
   width: 84px;
@@ -310,7 +320,7 @@ h1 {
   display: inline-block;
   position: absolute;
   top: -64px;
-  left: 80px;
+  left: 136px;
   transition: transform 1s ease-in-out;   
 }
 
@@ -321,7 +331,7 @@ h1 {
     display: inline-block;
     position: absolute;
     top: 6px;
-    left: 150px;
+    left: 208px;
     transition: transform .9s ease-in-out;
 }
 .services-wrapper h2 {
@@ -831,6 +841,11 @@ padding: 0;
 }
 
 @media (min-width: 320px) and (max-width: 767px) {
+  .home-banner.drive-your-business-text {
+    margin: 0;
+    font-size: 2rem !important;
+  }
+
   .drive-your-business-text,
   .services-block .card:hover .drive-your-business-text {
     font-size: 1.8rem;
@@ -840,14 +855,59 @@ padding: 0;
     font-size: .9rem !important;
     font-weight: 300 !important;
     margin: 20px 0;
+    width: auto;
   }
   .btn-wrapper .btn-lets-talk {
     min-width: 120px;
     height: 40px;
   }
+
   .service-card.card:hover .subtext-wrapper {font-size: .8rem;}
+
+  .services-wrapper h2 {font-size: 28px;}
+
+  .services-wrapper .icon-wrapper .services-icon-big {
+    width: 35%;
+    height: 100%;
+    top: -30px;
+    left: 100px;
+    background-size: contain;
+  }
+
+  .services-wrapper .icon-wrapper .services-icon-small {
+    width: 20%;
+    height: 60%;
+    top: 5px;
+    left: 130px;
+    background-size: contain;
+  }
+
+
   #featureCarousel .card:hover .subtext-wrapper {bottom: -3rem;}
   .container .project-container {margin: 20px 0 !important;}
+
+  .partner-container .partner-post h1,
+  .about-container .about_us h1,
+  .contact-us-container .contact_us h1 {
+    font-size: 28px !important;
+  }
+
+  .partner-container .partner-post .join-with-us-paragraph,
+  .about-container .about_us .about-us-paragraph {font-size: .8rem;}
+
+  .contact-us-container .contact_us .btn-contact-us,
+  .partner-container .partner-post .btn-contact-us {
+    padding: 5px 5px 5px 15px !important;
+    min-width: 95px;
+  }
+
+  .partner-container .partner-post .btn-contact-us .contact-us-arrow,
+  .contact-us-container .contact_us .btn-contact-us .contact-us-arrow {
+    padding: 5px 0 0 5px;
+    font-size: 1.7em;
+  }
+  .swiper-wrapper {height: 100% !important;}
+  .swiper-slide, .swiper-slide img {width: 100% !important; height: 100% !important;}
 
   .bd-footer p.subtext {font-size: 14px;}
 
