@@ -26,15 +26,6 @@
 }
 
 /* Body and Common CSS Starts */
-.home-bg {
-    background: #000000;
-    color: #fff;
-    overflow: auto;
-    background-size: cover;
-    height: 100vh;
-    cursor: default;
-}
-
 .mouseBackground {
   position: relative;
   width: 100%;
@@ -51,6 +42,13 @@
   opacity: .2;
   box-shadow: 0 0 200px 170px rgb(255 0 0 / 55%);
   border: 0;
+}
+.home-bg {
+  background: #000000;
+  color: #fff;
+  overflow: auto;
+  background-size: cover;
+  height: 100vh;
 }
 
 .container {background: #050413;}
@@ -75,6 +73,11 @@ p, .subtext {color: #d0daf5;}
     color: #ed2b24 !important;
     background: url(../images/a_hover.png) no-repeat 20px 30px;
     background-color: transparent !important;
+  }
+
+  .navbar .navbar-toggler-icon {
+    background-image: url(
+  "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255, 255, 255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
 
   .footer-navbar > li > a:hover {background: url(../images/a_hover.png) no-repeat 0 30px;}
