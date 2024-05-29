@@ -848,9 +848,35 @@ padding: 0;
 
   .drive-your-business-text,
   .services-block .card:hover .drive-your-business-text {
-    font-size: 1.8rem;
+    font-size: 1.8rem !important;
     margin: 0 10px;
   }
+
+  .service-card .card-text {
+      font-size: 14px;
+      bottom: 60px !important;
+      padding: 10px !important;
+      margin-bottom: 5px;
+      line-height: 1;
+  }
+
+  .card:hover .card-text {bottom: 40px !important;}
+
+  .subtext-wrapper .card-sub-text {font-size: 12px; margin-bottom: 0;}
+
+  .subtext-wrapper .see-more-btn {
+    background: none;
+    font-size: 12px;
+    text-align: right;
+    width: 130px;
+    float: right;
+    height: 42px;
+    padding: 10px;
+  }
+
+  .card:hover .overlay {height: 8rem;}
+
+
   .lead {
     font-size: .9rem !important;
     font-weight: 300 !important;
@@ -862,7 +888,7 @@ padding: 0;
     height: 40px;
   }
 
-  .service-card.card:hover .subtext-wrapper {font-size: .8rem;}
+  .service-card.card:hover .subtext-wrapper {font-size: .8rem; bottom: -3.5rem;}
 
   .services-wrapper h2 {font-size: 28px;}
 
