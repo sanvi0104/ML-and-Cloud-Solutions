@@ -69,7 +69,8 @@ p, .subtext {color: #d0daf5;}
   .nav-link:hover,
   .nav-link:focus,
   .footer-navbar > li > a:hover,
-  .dropdown-item:focus, .dropdown-item:hover {
+  .dropdown-item:focus, .dropdown-item:hover,
+  .dropdown-menu .dropdown-item.active {
     color: #ed2b24 !important;
     background: url(../images/a_hover.png) no-repeat 20px 30px;
     background-color: transparent !important;
@@ -296,7 +297,7 @@ p, .subtext {color: #d0daf5;}
   width: 650px;
   height: 650px;
   top: -11rem;
-  left: -2rem;
+  /* left: -2rem; */
 }
 
 .aboutus-block .methodology-image {
@@ -311,8 +312,8 @@ p, .subtext {color: #d0daf5;}
   background: url("../images/about_us/aboutus-our-values.png") no-repeat;
   width: 1290px;
   height: 650px;
-  top: -11.5rem;
-  left: -24rem;
+  top: -13.7rem;
+  left: -23rem;
 }
 
 .partner-block .partner-image,
@@ -336,14 +337,14 @@ p, .subtext {color: #d0daf5;}
     width: 712px;
     height: 610px;
     left: 1rem;
-    top: -8rem;
+    top: -10.3rem;
     background-size: contain;
 }
 
 .get-quotes-wrapper {
     border-radius: 15px;
     padding: 40px 30px;
-    margin: 8rem 0;
+    margin: 6rem 0 0; /**/
     background: linear-gradient(to right, #373737 0%, #1E1D2A 40%, #000 100%);
 }
 
@@ -962,9 +963,9 @@ font-size: 3.5rem;
 .aboutus-block .integrity-image {
   background: url("../images/about_us/integrity-bg-image.png") no-repeat;
   width: 700px;
-  height: 800px;
+  height: 750px;
   top: -13rem;
-  left: -1.3rem;
+  left: 3.5rem;
 }
 
 .aboutus-block .innovation-image {
