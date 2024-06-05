@@ -742,13 +742,21 @@ padding: 0;
 #featureContainer a{
   text-decoration: none;
 }
-#featureContainer .indicator{
+#featureContainer .featureCarousalSwiper {padding-bottom: 60px;}
+#featureContainer .swiper-button-prev, #featureContainer .swiper-button-next {bottom: 0; left: 0; top: auto;}
+#featureContainer .swiper-button-next {left: 50px;}
+#featureContainer .indicator,
+#featureContainer .swiper-button-prev,
+#featureContainer .swiper-button-next{
   background: #ed2b24;
-  padding: 10px 18px;
+  padding: 10px 16px;
   border-radius: 50px;
   color: #fff;
   opacity: 1;
+  height: 32px;
 }
+#featureContainer .swiper-button-prev::after,
+#featureContainer .swiper-button-next::after {font-size: 16px !important;}
 #featureContainer .indicator:hover{
   background-color: #ed2b24;
   transition: 200ms;
@@ -759,7 +767,9 @@ padding: 0;
   transition: 200ms;
 }
 
-#featureContainer .indicator.disabled {
+#featureContainer .indicator.disabled,
+#featureContainer .swiper-button-prev.swiper-button-disabled,
+#featureContainer .swiper-button-next.swiper-button-disabled {
   color: lightgray;
   background: #888888;
 }
@@ -771,7 +781,7 @@ padding: 0;
 
 
 .swiper-slide {
-  width: 36.5vw !important;
+  /* width: 31vw !important; 36.5vw !important */
   overflow: hidden;
   background-position: top;
   background-size: cover;
