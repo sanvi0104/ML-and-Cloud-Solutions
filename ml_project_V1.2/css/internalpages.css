@@ -46,9 +46,9 @@
 .home-bg {
   background: #000000;
   color: #fff;
-  overflow: auto;
+  /* overflow: auto; */
   background-size: cover;
-  height: 100vh;
+  /* height: 100vh; */
 }
 
 .container {background: #050413;}
