@@ -236,6 +236,7 @@ p, .subtext {color: #d0daf5;}
   background-size: contain;
   position: relative;
   right: -60%;
+  overflow: hidden;
 }
 
 /* Partner CSS Starts */
@@ -244,7 +245,7 @@ p, .subtext {color: #d0daf5;}
     background: #1E1D2A;
     border-radius: 15px;
     display: flex;
-    padding: 6.5rem 0;
+    padding: 6.5rem 0 2.5rem;
 }
 
 .partner-block h3,
@@ -269,8 +270,8 @@ p, .subtext {color: #d0daf5;}
     color: #d0daf5;
     text-align: justify;
     line-height: 2;
-    word-spacing: 3px;
-    font-size: 18px;
+    /* word-spacing: 3px; */
+    font-size: 20px;
 }
 
  .channel-partner-bg-image {
@@ -325,9 +326,9 @@ p, .subtext {color: #d0daf5;}
 
 .channel-partner-image {
     background: url("../images/partner_program/channel-partner-image.png") no-repeat;
-    width: 730px;
+    width: 690px;
     height: 510px;
-    right: -4rem;
+    right: 0rem;
     top: -10rem;
     background-size: contain;
 }
@@ -336,7 +337,7 @@ p, .subtext {color: #d0daf5;}
     background: url("../images/partner_program/product-partner-image.png") no-repeat;
     width: 712px;
     height: 610px;
-    left: 1rem;
+    left: 3rem;
     top: -10.3rem;
     background-size: contain;
 }
@@ -528,6 +529,7 @@ p, .subtext {color: #d0daf5;}
   position: absolute;
   top: 10%;
   left: 2px;
+  overflow: hidden;
 }
 
 .banner-text-wrapper .text-container p {
@@ -1111,6 +1113,14 @@ font-size: 3.5rem;
     font-size:.8rem;
     bottom: 4%;
     right: -40px;
+  }
+
+  .partner-banner-image {right: -54%;}
+  .product-partner-image {
+    width: 650px;     
+    height: 545px;
+    left: 1rem;
+    top: -7.3rem;
   }
   .aboutus-block .integrity-image {
     width: 515px;
