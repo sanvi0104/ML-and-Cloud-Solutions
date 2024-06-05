@@ -897,6 +897,8 @@ font-size: 3.5rem;
 
 #featureCarousel {padding: 0}
 
+#featureContainer .featureCarousalSwiper {padding-bottom: 60px;}
+
  #featureContainer .card {
   margin: 0 1em 0 0;
   background-color: #000;
@@ -906,12 +908,15 @@ font-size: 3.5rem;
 #featureContainer a{
   text-decoration: none;
 }
-#featureContainer .indicator{
+#featureContainer .indicator,
+#featureContainer .swiper-button-prev,
+#featureContainer .swiper-button-next {
   background: #ed2b24;
-  padding: 10px 18px;
+  padding: 10px 16px;
   border-radius: 50px;
   color: #fff;
   opacity: 1;
+  height: 32px;
 }
 #featureContainer .indicator:hover{
   background-color: #ed2b24;
@@ -923,9 +928,29 @@ font-size: 3.5rem;
   transition: 200ms;
 }
 
-#featureContainer .indicator.disabled {
+#featureContainer .indicator.disabled,
+#featureContainer .swiper-button-prev.swiper-button-disabled, 
+#featureContainer .swiper-button-next.swiper-button-disabled {
   color: lightgray;
   background: #888888;
+}
+
+#featureContainer .swiper-button-prev, #featureContainer .swiper-button-next {
+  bottom: 0;
+  left: 0;
+  top: auto;
+}
+
+#featureContainer .swiper-button-next {
+  left: 50px;
+}
+
+#featureContainer .card {
+  overflow: hidden;
+}
+
+#featureContainer .swiper-button-prev::after, #featureContainer .swiper-button-next::after {
+  font-size: 16px !important;
 }
 
 .client-container p {
@@ -1687,6 +1712,11 @@ font-size: 3.5rem;
   .aboutus-service-block > div span {font-size: 26px;}
 
   .aboutus-service-block > div h3 {font-size: 20px;}
+
+  .swiper-slide, .swiper-slide img {
+    width: 100% !important;
+    height: 100% !important;
+  }
 
   .contactus-location-container {margin-top: 0}
 
