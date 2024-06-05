@@ -637,6 +637,62 @@ margin-bottom: .3rem;
   border-radius: 0 !important;
 }
 
+.services-block .card .cloud-sol-service {
+  width: 590px;
+  height: 702px;
+  background-image: url("../images/services/cloud-sol-image.jpg");
+  background-size: cover;
+  transition: all 1s ease-in-out;
+  
+}
+.services-block .card:hover .cloud-sol-service {
+  background-image: url("../images/services/colud-sol-hover-image.jpg");
+  background-size: cover;
+  transform: scale(1.2, 1.4);
+}
+
+.services-block .card .custom-software-service {
+width: 590px;
+height: 702px;
+background-image: url("../images/services/custom-software-service-image.jpg");
+background-size: cover;
+transition: all 1s ease-in-out;
+
+}
+.services-block .card:hover .custom-software-service {
+background-image: url("../images/services/custom-software-service-hover-image.jpg");
+background-size: cover;
+transform: scale(1.2, 1.4);
+}
+
+.services-block .card .mobile-app-development-service {
+width: 590px;
+height: 702px;
+background-image: url("../images/services/mobile-app-dev-service-image.jpg");
+background-size: cover;
+transition: all 1s ease-in-out;
+
+}
+.services-block .card:hover .mobile-app-development-service {
+background-image: url("../images/services/mobile-app-dev-service-hover-image.jpg");
+background-size: cover;
+transform: scale(1.2,1.4);
+}
+
+.services-block .card .outsourcing-service {
+width: 590px;
+height: 702px;
+background-image: url("../images/services/outsourcing-service-image.jpg");
+background-size: cover;
+transition: all 1s ease-in-out;
+
+}
+.services-block .card:hover .outsourcing-service {
+background-image: url("../images/services/outsourcing-service-hover-image.jpg");
+background-size: cover;
+transform: scale(1.2, 1.4);
+}
+
 .services-block .card img {
 width: 100%;
 height: 100%; 
@@ -1189,6 +1245,17 @@ font-size: 3.5rem;
     margin: 0 2px;
   }
 
+  .services-block .card .custom-software-service,
+  .services-block .card .cloud-sol-service,
+  .services-block .card .mobile-app-development-service,
+  .services-block .card .outsourcing-service {
+    width: 100%; 
+    height: 100%; 
+    aspect-ratio: 1;
+  }
+
+  .service-card .subtext-wrapper .card-sub-text {margin: 0;}
+
   .footer-navbar.social-block li {margin: 10px 0 0;}
 }
 
@@ -1314,6 +1381,17 @@ font-size: 3.5rem;
   padding: 20px;
   margin: 0 2px;
 }
+
+.services-block .card .custom-software-service,
+.services-block .card .cloud-sol-service,
+.services-block .card .mobile-app-development-service,
+.services-block .card .outsourcing-service {
+  width: 100%; 
+  height: 100%; 
+  aspect-ratio: 1;
+}
+
+.service-card .subtext-wrapper .card-sub-text {margin: 0;}
 
   .footer-navbar.social-block li {margin: 10px 0 0;}
 }
@@ -1490,6 +1568,16 @@ font-size: 3.5rem;
     background-size: contain;
   }
 
+  .services-block .card .custom-software-service,
+  .services-block .card .cloud-sol-service,
+  .services-block .card .mobile-app-development-service,
+  .services-block .card .outsourcing-service {
+    width: 100%; 
+    height: 100%; 
+    aspect-ratio: 1;
+  }
+
+  .service-card .subtext-wrapper .card-sub-text {margin: 0;}
   .banner-text-wrapper .contactus-text-container .subtext-content {display: none;}
 }
 
