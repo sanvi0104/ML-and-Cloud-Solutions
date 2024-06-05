@@ -452,7 +452,7 @@ h1 {
 }
 .homepage-card-img {
   width: 100%;
-  max-height: 425px;
+  /* max-height: 425px; */
 }
 .carousel-inner {
   max-height: 500px;
@@ -465,164 +465,11 @@ h1 {
   }
 }
 
-/*
-@media (max-width: 767px) {
-  #featureContainer .carousel-inner .carousel-item > div {
-    display: none;
-  }
-  #featureContainer .carousel-inner .carousel-item > div:first-child {
-    display: block;
-  }
-}
-#featureContainer .carousel-inner .carousel-item.active,
-#featureContainer .carousel-inner .carousel-item-next,
-#featureContainer .carousel-inner .carousel-item-prev {
-  display: flex;
-}
-@media (min-width: 768px) {
-  
-  #featureContainer .carousel-inner .carousel-item-end.active,
-  #featureContainer .carousel-inner .carousel-item-next {
-    transform: translateX(25%);
-  }
-  #featureContainer .carousel-inner .carousel-item-start.active, 
-  #featureContainer .carousel-inner .carousel-item-prev {
-    transform: translateX(-25%);
-  }
-  #featureContainer .card img{
-    width: 90%;
-    height: 40vh;
-  }
-  #featureContainer .carousel-item{
-    justify-content: space-between;
-  }
-}
-@media (max-width: 767px) {
-  #featureContainer .card img{
-    width: 100%;
-    height: 75vh;
-  }
-}
-*/
-
-/*************Latest Project Carousel START****************/
-
-/* @media (max-width: 767px) {
-  #featureContainer .carousel-inner .carousel-item > div {
-    display: none;
-  }
-  #featureContainer .carousel-inner .carousel-item > div:first-child {
-    display: block;
-  }
-}
-#featureContainer .carousel-inner .carousel-item.active,
-#featureContainer .carousel-inner .carousel-item-next,
-#featureContainer .carousel-inner .carousel-item-prev {
-  display: flex;
-}
-@media (min-width: 768px) {
-  
-  #featureContainer .carousel-inner .carousel-item-end.active,
-  #featureContainer .carousel-inner .carousel-item-next {
-    transform: translateX(50%);
-  }
-  #featureContainer .carousel-inner .carousel-item-start.active, 
-  #featureContainer .carousel-inner .carousel-item-prev {
-    transform: translateX(-50%);
-  }
-  #featureContainer .card img{
-    width: 100%;
-    height: 40vh;
-  }
-  #featureContainer .carousel-item{
-    justify-content: space-between;
-  }
-}
-@media (max-width: 767px) {
-  #featureContainer .card img{
-    width: 100%;
-    height: 75vh;
-  }
-}
-#featureContainer .carousel-inner .carousel-item-end,
-#featureContainer .carousel-inner .carousel-item-start { 
-  transform: translateX(0);
-}
-#featureContainer .card{
-  border: 0;
-}
-#featureContainer .card{
-  position: relative;
-  margin-right: 0.85rem;
-  background: #000;
-  border: 1px solid #fff;
-}
-#featureContainer .card .card-img-overlays{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  font: 0.85rem bold 1rem;
-  padding: 0.85rem;
-  background: #000;
-  color: #fff;
-  width: 100%;
-}
-#featureContainer a{
-  text-decoration: none;
-}
-#featureContainer .indicator{
-  background: #333;
-  padding: 3px 10px;
-  border-radius:15px;
-  color: #fff;
-}
-#featureContainer .indicator:hover{
-  background-color: #ed2b24;
-  transition: 200ms;
-}
-#featureContainer .indicator:hover{
-  color: white;
-  transition: 200ms;
-}
-#featureContainer .indicator {
-  color: lightgray;
-}
-#featureContainer .float-end{
-  padding-top: 10px;
-} */
-/*************Latest Project Carousel END****************/
-
-
 #crossCarouselContainer{
 transform: skewY(10deg);
 padding: 0;
 }
 #crossCarouselContainer img{margin-right: 1rem;}
-/* 
-@media (max-width: 767px) {
-   #cross-carousel .carousel-inner .carousel-item > div {
-    display: none;
-  }
-   #cross-carousel .carousel-inner .carousel-item > div:first-child {
-    display: block;
-  }
-}
- #cross-carousel .carousel-inner .carousel-item.active,
- #cross-carousel .carousel-inner .carousel-item-next,
- #cross-carousel .carousel-inner .carousel-item-prev {
-  display: flex;
-}
-
-@media (min-width: 768px) {
-	 #cross-carousel .carousel-inner .carousel-item-end.active,
-	  #cross-carousel .carousel-inner .carousel-item-next {
-		transform: translateX(50%);
-	  }
-	 #cross-carousel .carousel-inner .carousel-item-start.active, 
-	  #cross-carousel .carousel-inner .carousel-item-prev {
-		transform: translateX(-50%);
-	  }
- } */
 
  .services-block .card {
     width: 590px; 
@@ -633,6 +480,62 @@ padding: 0;
     background-color: #000 !important;
     border-radius: 0 !important;
   }
+
+  .services-block .card .cloud-sol-service {
+    width: 590px;
+    height: 702px;
+    background-image: url("../images/services/cloud-sol-image.jpg");
+    background-size: cover;
+    transition: all 1s ease-in-out;
+    
+  }
+  .services-block .card:hover .cloud-sol-service {
+    background-image: url("../images/services/colud-sol-hover-image.jpg");
+    background-size: cover;
+    transform: scale(1.2, 1.4);
+}
+
+.services-block .card .custom-software-service {
+  width: 590px;
+  height: 702px;
+  background-image: url("../images/services/custom-software-service-image.jpg");
+  background-size: cover;
+  transition: all 1s ease-in-out;
+  
+}
+.services-block .card:hover .custom-software-service {
+  background-image: url("../images/services/custom-software-service-hover-image.jpg");
+  background-size: cover;
+  transform: scale(1.2, 1.4);
+}
+
+.services-block .card .mobile-app-development-service {
+  width: 590px;
+  height: 702px;
+  background-image: url("../images/services/mobile-app-dev-service-image.jpg");
+  background-size: cover;
+  transition: all 1s ease-in-out;
+  
+}
+.services-block .card:hover .mobile-app-development-service {
+  background-image: url("../images/services/mobile-app-dev-service-hover-image.jpg");
+  background-size: cover;
+  transform: scale(1.2,1.4);
+}
+
+.services-block .card .outsourcing-service {
+width: 590px;
+height: 702px;
+background-image: url("../images/services/outsourcing-service-image.jpg");
+background-size: cover;
+transition: all 1s ease-in-out;
+
+}
+.services-block .card:hover .outsourcing-service {
+background-image: url("../images/services/outsourcing-service-hover-image.jpg");
+background-size: cover;
+transform: scale(1.2, 1.4);
+}
 
  .services-block .card img {
   width: 100%;
@@ -800,10 +703,22 @@ padding: 0;
 }
 
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .footer-navbar.social-block li {margin: 10px 0 0;}  
+  .footer-navbar.social-block li {margin: 10px 0 0;} 
+  .card:hover .subtext-wrapper {bottom: -2.5rem;}
+  .subtext-wrapper .card-sub-text {margin-bottom: 0;}
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
+  .services-block .card .custom-software-service,
+  .services-block .card .cloud-sol-service,
+  .services-block .card .mobile-app-development-service,
+  .services-block .card .outsourcing-service {
+    width: 100%; 
+    height: 100%; 
+    aspect-ratio: 1;
+  }
+
+  .service-card .subtext-wrapper .card-sub-text {margin: 0;}
   .footer-navbar.social-block li {margin: 10px 0 0;}
 }
 
@@ -843,6 +758,19 @@ padding: 0;
   #featureContainer .card .card-text {font-size: 1rem;}
 
   #featureContainer .card .subtext-wrapper {font-size: .8rem;}
+
+  .services-block .card .custom-software-service,
+  .services-block .card .cloud-sol-service,
+  .services-block .card .mobile-app-development-service,
+  .services-block .card .outsourcing-service {
+    width: 100%; 
+    height: 100%; 
+    aspect-ratio: 1;
+  }
+
+  .card:hover .subtext-wrapper {bottom: -3rem;}
+
+  .subtext-wrapper .card-sub-text {font-size: 16px; margin: 0;}
 
   .footer-navbar.social-block li {
     margin: 10px 0 0;
